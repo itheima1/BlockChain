@@ -196,6 +196,9 @@
     - 课程开源时间:
 
       2018年7月24日
+      
+
+
 课程表 | 视频名称 | 下载地址
 -| - | -
 week7/day01|01_课程简介|https://pan.baidu.com/s/1vyuydXrAQSICw0MOfKNgEQ
@@ -208,6 +211,7 @@ week7/day01|07_如何获取以太币|https://pan.baidu.com/s/1bsxrgRHHuKAKR9A9tU
 week7/day01|08_转账过程详解|https://pan.baidu.com/s/127KQBTBWzj4JhYxQZUXMfQ
 week7/day01|09_为什么转账需要一些时间|https://pan.baidu.com/s/1e-UbQWBvD0TQlpRQFtVrPw
 week7/day01|更多内容|等待上传...
+
 
 课程表 | 视频名称 | 下载地址
 -| - | -
