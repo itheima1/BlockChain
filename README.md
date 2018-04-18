@@ -196,6 +196,44 @@
     - 课程开源时间:
 
       2018年7月24日
+课程表 | 视频名称 | 下载地址
+-| - | -
+week7/day01|01_课程简介|https://pan.baidu.com/s/1vyuydXrAQSICw0MOfKNgEQ
+week7/day01|02_以太坊的历史|https://pan.baidu.com/s/1DJx5g3dhzEi9CA7beqEDkg
+week7/day01|03_以太坊和以太坊网络|https://pan.baidu.com/s/1vutWpw07r5vmr252nIbNtA
+week7/day01|04_和以太坊网络交互的方式|https://pan.baidu.com/s/10ySQp2dP3o5DUELv2jh2FA
+week7/day01|05_metamask的安装和基本操作|https://pan.baidu.com/s/1e-shvnS5p6WmQoO-IZM1lw
+week7/day01|06_以太坊钱包地址详解|https://pan.baidu.com/s/1atRkB7xPkoQXAcoI1RT7qw
+week7/day01|07_如何获取以太币|https://pan.baidu.com/s/1bsxrgRHHuKAKR9A9tUsbMw
+week7/day01|08_转账过程详解|https://pan.baidu.com/s/127KQBTBWzj4JhYxQZUXMfQ
+week7/day01|09_为什么转账需要一些时间|https://pan.baidu.com/s/1e-UbQWBvD0TQlpRQFtVrPw
+week7/day01|更多内容|等待上传...
+
+课程表 | 视频名称 | 下载地址
+-| - | -
+week7/day03|01_业务分析|https://pan.baidu.com/s/1cTAdME1EF20kxGAFry9yKw
+week7/day03|02_智能合约的初步设计|https://pan.baidu.com/s/1OUpfXQs4yzrcOAn8XHRH6w
+week7/day03|03_solidity编程语言数据基本类型|https://pan.baidu.com/s/1aib1_Yg44us5RLDyeNY6rQ
+week7/day03|04_彩票智能合约初步编写|https://pan.baidu.com/s/1PGuc0ajDHjEWhsz4fVwTuQ
+week7/day03|05_彩票智能合约的manager赋值|https://pan.baidu.com/s/1Od_m_5hoRFHQauQ2FytqoQ
+week7/day03|06_solidity数组讲解|https://pan.baidu.com/s/13MXnDVzwr3VwXN2K1Vj0Mg
+week7/day03|07_solidity数组开发的小坑|https://pan.baidu.com/s/1ez-_Sw8CLOu1Q1ESc_gcHA
+week7/day03|08_支付的校验|https://pan.baidu.com/s/1IReaf6zv1zE7bh4GkDr98Q
+week7/day03|09_智能合约的debug|https://pan.baidu.com/s/1JZ97eVt0gJW3lyY-j4Oi5g
+week7/day03|10_公众查询奖金池里面有多少钱|https://pan.baidu.com/s/1U9y87ZbDlXrDyO0WQEBq0g
+week7/day03|11_彩票开奖的逻辑|https://pan.baidu.com/s/1PIel3YRfC3RYuHfuIlPi7A
+week7/day03|12_随机数生成器|https://pan.baidu.com/s/1q7TAg3wVmZ5T2ijdcFbCVA
+week7/day03|13_选取幸运的彩民|https://pan.baidu.com/s/1mBaJVGRta-W10983huB-JQ
+week7/day03|14_智能合约自动发送奖金给中奖者|https://pan.baidu.com/s/1YZn7AO8U-OwE5KuD_5Tgcw
+week7/day03|15_彩票智能合约业务逻辑细节修复|https://pan.baidu.com/s/1pKiEuuCBcCU2SDImJ3oo4Q
+week7/day03|16_彩票智能合约权限相关漏洞修复|https://pan.baidu.com/s/14aWRo4vVqCGpHRQgYGzGBA
+week7/day03|17_solidity高效特性内联函数modifier|https://pan.baidu.com/s/1DaFTA0FD4aMRZZzfB5NtKg
+week7/day03|18_手动测试彩票智能合约的逻辑|https://pan.baidu.com/s/1OlskLELc8XgAY2hgz4a9_Q
+week7/day03|19_搭建ide测试开发环境|https://pan.baidu.com/s/179caqckJVKbZwvja3tK3Yw
+week7/day03|20_单元测试智能合约的编译和部署|https://pan.baidu.com/s/1LuUubPxTvFCIqWL9rxFncA
+week7/day03|21_智能合约购买彩票和查询奖池的测试|https://pan.baidu.com/s/1wWpPI5O2Iy9nhJzA261UYg
+week7/day03|前端项目开发|等待上传...
+
 
 - **第九周:  区块链产品经理之道**
 
