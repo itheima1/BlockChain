@@ -250,6 +250,31 @@
 
       2018年8月9日
 
+      | 课程表       | 视频名称                                         | 下载地址                                        |
+      | ------------ | ------------------------------------------------ | ----------------------------------------------- |
+      | week10/day01 | 01_hyperledger是什么                             | https://pan.baidu.com/s/1mxBeIyBlsy8UwBnvFP78Kw |
+      | week10/day01 | 02_hyperledger学习目标                           | https://pan.baidu.com/s/1YZADE48SjcqH4FKn7qsBiw |
+      | week10/day01 | 03_hyperledger重建信任                           | https://pan.baidu.com/s/1VwN9Omb42k0NCoiCa96fJw |
+      | week10/day01 | 04_hyperledger如何解决现实问题                   | https://pan.baidu.com/s/1lziZ_63kfzE7hKmYDb-LNw |
+      | week10/day01 | 05_hyperledger重要组件CA,peer和ordering          | https://pan.baidu.com/s/13CbBZhglRyGCFw5XUBWokQ |
+      | week10/day01 | 06_hyperledger案例实战--江苏省农牧厅渔政管理系统 | https://pan.baidu.com/s/1OZz5CscVcTOHSxqSU2OBOg |
+      | week10/day01 | 07_hyperledger的channel                          | https://pan.baidu.com/s/1GEkpK63P61OLJxtCbsRZ7w |
+      | week10/day01 | 08_hyperledger的chaincode                        | https://pan.baidu.com/s/1ClxMg7ZajZaOZutSCK9V0g |
+      | week10/day01 | 09_hyperledger的工作流程(重要)                   | https://pan.baidu.com/s/1r5dqkxeLFAsGenjqaRZLIA |
+      | week10/day01 | 10_hyperledger的msp                              | https://pan.baidu.com/s/13T9nf4xsL_8QJd262_sQpw |
+      | week10/day01 | 11_hyperledger术语回顾                           | https://pan.baidu.com/s/13-PzjVvwJxcoNHAPbxLQ6A |
+      | week10/day01 | 12_hyperledger案例实战--生产者业务分析           | https://pan.baidu.com/s/13_t3uKnQkq_DVFkTpsL-lA |
+      | week10/day01 | 13_hyperledger案例实战--消费者业务分析           | https://pan.baidu.com/s/1DTLSofrOH1OVjljmVa58qg |
+      | week10/day01 | 14_hyperledger案例实战--隐私业务分析             | https://pan.baidu.com/s/1LFkzfA1Oh4db2j008ba0Xg |
+      | week10/day01 | 15_hyperledger案例实战--渔政监管需求分析         | https://pan.baidu.com/s/1-45AN9lS742WJrVExharGQ |
+      | week10/day01 | 16_hyperledger案例实战--msp管理                  | https://pan.baidu.com/s/1VpOQzUuKVR-PU7pO1E2Sug |
+      | week10/day01 | 17_hyperledger案例实战--业务复盘                 | https://pan.baidu.com/s/1W8-qvPYArcyqBG654vYjnA |
+      | week10/day01 | 18_hyperledger案例实战--手把手环境搭建           | https://pan.baidu.com/s/1-q93okIZ2oZ3kruDX60DAw |
+      | week10/day01 | 19_hyperledger案例实战--安装git和docker          | https://pan.baidu.com/s/1XkFvJPwHUIY4oUe4RPVx9Q |
+      | week10/day01 | 20_hyperledger案例实战--tools和docker镜像安装    | https://pan.baidu.com/s/1oHZ7i3i-1oB4y_DVCMbI1A |
+      | week10/day01 | 21_hyperledger案例实战--first-network            | https://pan.baidu.com/s/1FU6M5c9OHLdvE9zs4XEXuQ |
+      | week10/day01 | 22_hyperledger案例实战--chaincode讲解            | https://pan.baidu.com/s/194LKUBBj6H8e3FddhUs8fA |
+		| week10/day01 | 更多内容            | 等待上传... |
 - **第十一周:  区块链移动开发+智能物联网**
 
     - 课程设计背景:
