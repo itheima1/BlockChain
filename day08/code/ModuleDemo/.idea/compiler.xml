@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="App_main" target="1.8" />
+      <module name="App_test" target="1.8" />
+      <module name="Core_main" target="1.8" />
+      <module name="Core_test" target="1.8" />
+      <module name="GradleDemo14_main" target="1.8" />
+      <module name="GradleDemo14_test" target="1.8" />
+      <module name="ModuleDemo_main" target="1.8" />
+      <module name="ModuleDemo_test" target="1.8" />
+      <module name="Third_main" target="1.8" />
+      <module name="Third_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
