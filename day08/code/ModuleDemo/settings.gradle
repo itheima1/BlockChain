@@ -1,5 +1,0 @@
-//rootProject.name = 'GradleDemo13'
-include 'Core'
-include 'App'
-include 'Third'
-

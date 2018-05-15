@@ -1,4 +1,0 @@
-rootProject.name = 'GradleDemo12_mul_module'
-include 'App'
-include 'Core'
-
