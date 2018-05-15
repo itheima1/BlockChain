@@ -1,0 +1,43 @@
+视频下载地址:
+
+<https://pan.baidu.com/s/1h4J_Aw010lk-PNz3hE9X7Q>
+
+~~~
+​	01.回顾.avi
+    02.java集合回顾.avi
+    03.koltin创建java的List集合.avi
+    04.kotlin的set集合.avi
+    05.map集合的创建.avi
+    06.map集合的遍历.avi
+    07.闭包.avi
+    08.高阶函数.avi
+    09.lambda表达式.avi
+    10.lambda表达式去().avi
+    11.有参lambda表达式.avi
+    12.保存lamba表达式.avi
+    13.lambda表达式使用it.avi
+    14.lambda表达式返回值.avi
+    15.常见lambda表达式foreach.avi
+    16.常见的lambda表达式indexoffirst.avi
+    17.非诚勿扰练习.avi
+    18.过滤.avi
+    19.排序.avi
+    20.分组.avi
+    21.最值.avi
+    22.去重复.avi
+    23.集合拆分.avi
+    24.集合重新组合.avi
+    25.集合相加.avi
+    26.上午回顾.avi
+    27.大接收者的函数字面值.avi
+    28.apply函数.avi
+    29.let函数.avi
+    30.with函数.avi
+    31.run函数.avi
+    32.案例前提.avi
+    33.接口回调.avi
+    34.接口回调流程.avi
+    35.函数回调.avi
+    36.接口回调和函数回调的对比.avi
+~~
+~~~

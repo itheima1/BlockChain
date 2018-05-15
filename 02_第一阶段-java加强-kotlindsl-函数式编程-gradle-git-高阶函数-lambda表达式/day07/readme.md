@@ -1,0 +1,40 @@
+视频下载地址:
+
+链接：https://pan.baidu.com/s/1zjjAD1Enfc6sMbVVv6jfdA 密码：nhc7
+
+
+
+​    new_01.回顾DSL.avi
+    new_02.原始人的工作方式.avi
+    new_03.三种构建工具对比.avi
+    new_04.gradle简介.avi
+    new_05.gradle下载和配置.avi
+    new_06.gradle项目初始化.avi
+    new_07.gradle打包.avi
+    new_08.静态语言和动态语言.avi
+    new_09.gradle支持kotlin开发.avi
+    new_10.project和task.avi
+    new_11.第一个task任务.avi
+    new_12.task依赖.avi
+    new_13.task生命周期.avi
+    new_14.tasks任务集.avi
+    new_15.默认属性.avi
+    new_16.增量更新.avi
+    new_17.常见的插件.avi
+    new_18.下载和导入httpclient的jar包.avi
+    new_19.使用httpclient.avi
+    new_20.解决httpclient依赖的问题.avi
+    new_21.高级程序员做法.avi
+    new_22.两种方案对比.avi
+    new_23.依赖管理的总结.avi
+    new_24.常见的仓库.avi
+    new_25.依赖的坐标.avi
+    new_26.依赖的配置阶段.avi
+    new_27.版本冲突第一种解决方案.avi
+    new_28.依赖冲突的解决.avi
+    new_29.扩展gradle任务.avi
+    new_30.多模块构建简介.avi
+    new_31.多模块的依赖.avi
+    new_32.多模块构建.avi
+    new_33.查看groovy编写的gradle脚本.avi
+    new_34.总结.avi
