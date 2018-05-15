@@ -1,9 +1,9 @@
 视频下载地址:
 
-<https://pan.baidu.com/s/1h4J_Aw010lk-PNz3hE9X7Q>
+<https://pan.baidu.com/s/1OQniFr7fpmTp9Bb1Jv72tQ>
 
 ~~~
-​	01.回顾.avi
+	01.回顾.avi
     02.java集合回顾.avi
     03.koltin创建java的List集合.avi
     04.kotlin的set集合.avi

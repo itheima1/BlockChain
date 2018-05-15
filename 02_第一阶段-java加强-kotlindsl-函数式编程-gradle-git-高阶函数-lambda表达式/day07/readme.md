@@ -2,9 +2,9 @@
 
 链接：https://pan.baidu.com/s/1zjjAD1Enfc6sMbVVv6jfdA 密码：nhc7
 
-
-
-​    new_01.回顾DSL.avi
+​
+~~~
+new_01.回顾DSL.avi
     new_02.原始人的工作方式.avi
     new_03.三种构建工具对比.avi
     new_04.gradle简介.avi
@@ -38,3 +38,4 @@
     new_32.多模块构建.avi
     new_33.查看groovy编写的gradle脚本.avi
     new_34.总结.avi
+~~~
