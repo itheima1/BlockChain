@@ -1,6 +1,6 @@
 视频下载地址:
 
-<https://pan.baidu.com/s/1OQniFr7fpmTp9Bb1Jv72tQ>
+链接：<https://pan.baidu.com/s/1FvrzgbtmO7hjomjtGCf3zA> 密码：3c84
 
 ~~~
 	01.回顾.avi
