@@ -30,26 +30,8 @@
 3. 没有毅力 自主学完全套课程的朋友,  可以报名传智播客 黑马程序员 智能物联网+区块链就业班
 4. [点击查看黑马程序员官网](http://www.itheima.com/course/wlwtext.html)
 
-课程表 | 视频名称 | 下载地址
--| - | -
-开班典礼|01_从实体货币到数字货币|https://pan.baidu.com/s/1yW929XMP_fuBBg7Yi7tFIg
-开班典礼|02_分布式记账|https://pan.baidu.com/s/1rr5ID89fSPajwNaBHrUXMg
-开班典礼|03_中心化和去中心化|https://pan.baidu.com/s/1Br4Zy-fzZUJ_heGkfUb6mw
-开班典礼|04_hash函数|https://pan.baidu.com/s/1uJ89F3ETsHmfPmU3c5Idgw
-开班典礼|05_hash算法的安全性|https://pan.baidu.com/s/1NWaykKebdU76JZC_cT02Vg
-开班典礼|06_分布式系统和数据一致性|https://pan.baidu.com/s/1ABEJwUsltPf9A9416titAg
-开班典礼|07_通货膨胀和比特币|https://pan.baidu.com/s/1KY2cRI0TNjKFWSpi_j8xWA
-开班典礼|08_区块链技术的演化|https://pan.baidu.com/s/1qIt969qHiQPxEor1GdX1_A
-开班典礼|09_区块链的应用场景|https://pan.baidu.com/s/1gEBqueKmYRwx2waxpKDVKg
-开班典礼|10_我到底需不需要区块链技术|https://pan.baidu.com/s/1HXIM9SI9P0CKpuCOikqYSw
-开班典礼|11_如何鉴别区块链风口里的猪|https://pan.baidu.com/s/14z3MPBOHt8lizvwhjLKZMg
-开班典礼|12_区块链项目的评估方法|https://pan.baidu.com/s/1aYajM01WjQGAoJ1z4gJnFg
-开班典礼|13_ico和ipo和daico|https://pan.baidu.com/s/1TniVTbkxTgygEIbymCyuJw
-开班典礼|14_关于区块链的错误认知|https://pan.baidu.com/s/17LmSsgD7RySB9vU9Zymz-g
-开班典礼|15_分布式系统的一些概念|https://pan.baidu.com/s/13se0IiA8C5zRsWjE4F3NFA
-开班典礼|16_区块链技术栈和学习线路图|https://pan.baidu.com/s/1d9RXv_Qh3srl9a9PqE9ibQ
-开班典礼|17_区块链的技术现状|https://pan.baidu.com/s/1auv18CFORJpWNqVfeaHESg
-
+###课程qq群
+点击链接加入群聊【答疑群】：https://jq.qq.com/?_wv=1027&k=5D3no1J
 
 
 ### 课程课表
@@ -340,6 +322,8 @@ week10/day01 | 20_hyperledger案例实战--tools和docker镜像安装    | https
 week10/day01 | 21_hyperledger案例实战--first-network            | https://pan.baidu.com/s/1FU6M5c9OHLdvE9zs4XEXuQ 
 week10/day01 | 22_hyperledger案例实战--chaincode讲解            | https://pan.baidu.com/s/194LKUBBj6H8e3FddhUs8fA 
 week10/day01 | 更多内容            | 等待上传... 
+
+
 - **第十一周:  区块链移动开发+智能物联网**
 
     - 课程设计背景:
