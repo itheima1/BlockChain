@@ -30,11 +30,17 @@
 3. 没有毅力 自主学完全套课程的朋友,  可以报名传智播客 黑马程序员 智能物联网+区块链就业班
 4. [点击查看黑马程序员官网](http://www.itheima.com/course/wlwtext.html)
 
+
+
+
+
 ###课程qq群
 点击链接加入群聊【答疑群】：https://jq.qq.com/?_wv=1027&k=5D3no1J
 
 
+
 ### 课程课表
+
  - **第一周: java加强/kotlin/dsl/函数式编程/gradle/git/高阶函数/lambda表达式**
     - 课程设计背景:
       kotlin是一个非常具有潜力和启发性的编程语言，100%与Java兼容, 安卓开发谷歌官方指定语言，它吸收和借鉴了Java， Scala， Groovy， C#，Go，JavaScript等语言的优点和特性，可以让大家脱离语言层面的纷争，把目光投向具体的业务. 目前区块链金融和银行领域的解决方案corda就是采用kotlin编写.掌握kotlin语言有助于帮助程序员用极小的成本理解和学习其他编程语言.
