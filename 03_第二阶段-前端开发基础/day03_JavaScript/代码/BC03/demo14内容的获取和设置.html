@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="div1">
+			this is a div
+			<p>this is a p</p>
+			
+		</div>
+
+		<script type="text/javascript">
+			var div1 = document.getElementById("div1")
+			// 获取标签中的文本内容
+			//			console.log(div1.innerText)
+			// 获取标签中的所有内容,包括标签
+//			console.log(div1.innerHTML)
+
+// 两边使用的是",里面要使用引号的时候就使用'
+//两边使用的是',里面要使用引号的时候就使用"
+//div1.innerHTML="<a href='#'>hello</a>"
+div1.innerHTML='<a href="#">hello</a>'
+
+		</script>
+	</body>
+
+</html>

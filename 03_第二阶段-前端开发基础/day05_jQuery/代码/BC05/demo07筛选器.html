@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>筛选器</title>
+	</head>
+
+	<body>
+
+		<ul>
+			<li>北京</li>
+			<li>上海</li>
+			<li>广州</li>
+			<li>深圳</li>
+			<li>东莞</li>
+		</ul>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 过滤出来第一个元素
+			//	$("li:first").css("color","red")
+			// 过滤最后一个元素
+			//			$("li:last").css("color", "red")
+			// odd,even :过滤奇数偶数
+			//			$("li:even").css("color", "red")
+			// 过滤等于下标的元素
+			//			$("li:eq(0)").css("color", "red")
+
+			// lt过滤小于下标的元素,gt过滤大于下标的元素
+			//			$("li:lt(2)").css("color", "red")
+			//如果有和筛选器同名的方法的话,推荐使用方法,因为方法效率更高
+			$("li").first().css("color", "red")
+		</script>
+	</body>
+
+</html>

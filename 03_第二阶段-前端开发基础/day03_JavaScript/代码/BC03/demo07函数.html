@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// 无参无返回值的函数
+
+			function fn1() {
+				document.write("无参无返回值的函数")
+			}
+
+			// 有参无返回值的函数
+
+			function fn2(a, b) {
+				document.write("有参无返回值的函数:a:" + a + ",b:" + b)
+			}
+
+			// 无参有返回值的函数
+
+			function fn3() {
+				return 2;
+			}
+
+			// 有参有返回值的函数
+
+			function fn4(a, b) {
+
+				return a + b;
+			}
+
+			// 调用函数
+			//			fn1();
+			//			fn2(1, "3");
+
+			var result = fn4(2,3)
+			console.log(result)
+		</script>
+	</body>
+
+</html>

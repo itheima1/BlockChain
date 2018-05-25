@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>行列的合并</title>
+	</head>
+	<!--
+	
+	行的合并
+		rowspan : 指定行的合并,
+				从上往下,找到第一个格子,设置rowspan属性
+				属性值 :指定总共合并了多少个格子
+				被合并的格子要删除
+		colspan : 指定列的合并,
+				从左往右,找到第一个格子,设置colspan属性
+				属性值 :指定总共合并了多少个格子
+				被合并的格子要删除
+-->
+
+	<body>
+		<table border="1" cellspacing="0" width="90%">
+			<tr>
+				<th rowspan="3">指标</th>
+				<th colspan="2">招生数</th>
+
+				<th colspan="2">在校生数</th>
+				<th colspan="2">毕业生数</th>
+			</tr>
+			<tr>
+
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+				<td>万人</td>
+				<td>比上年增长(%)</td>
+			</tr>
+			<tr>
+				<td>1.0</td>
+				<td>3.5</td>
+				<td>1.0</td>
+				<td>3.5</td>
+				<td>1.0</td>
+				<td>3.5</td>
+			</tr>
+			<tr>
+				<td>中等职业学校</td>
+				<td>1.0</td>
+				<td>3.5</td>
+				<td>1.0</td>
+				<td>3.5</td>
+				<td>1.0</td>
+				<td>3.5</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>定时器</title>
+	</head>
+
+	<body>
+		<a href="demo05history.html">打开第五个页面</a>
+		<br />
+		<input type="button" value="五秒钟时候显示当前时间" onclick="showTime5()" />
+		<input type="button" value="关闭五秒钟的闹钟" onclick="closeTime5()" />
+		<br /> <input type="button" value="打开时钟" onclick="openClock()" />
+		<input type="button" value="关闭时钟" onclick="closeClock()" />
+		<br />
+		<script type="text/javascript">
+			function showTime() {
+				var date = new Date()
+
+				var spanTag = document.getElementById("id_span")
+				spanTag.innerHTML = date
+			}
+			var timer1 = null;
+
+			function showTime5() {
+				// 参数1:要执行的逻辑
+				// 参数2: 延时时间,单位是毫秒值
+				// 定时任务只执行一次
+				timer1 = setTimeout("showTime()", 5000)
+			}
+
+			function closeTime5() {
+				// 清除定时任务
+				clearTimeout(timer1)
+			}
+
+			var timer2 = null;
+
+			function openClock() {
+				// 参数1:要执行的逻辑
+				// 参数2: 延时时间,单位是毫秒值
+				// 定时任务会一直执行下去
+				timer2 = setInterval("showTime()", 1000)
+			}
+
+			function closeClock() {
+				// 清除定时任务
+				clearInterval(timer2)
+			}
+		</script>
+		<span id="id_span">
+			
+		</span>
+	</body>
+
+</html>

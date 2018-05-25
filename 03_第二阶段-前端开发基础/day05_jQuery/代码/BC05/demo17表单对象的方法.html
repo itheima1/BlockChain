@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表单对象状态的过滤</title>
+	</head>
+
+	<body>
+
+		<form>
+
+			<input type="text" disabled="disabled" />
+			<input type="button" value="主页" />
+
+			<input type="submit" value="注册" />
+
+			<input type="radio" checked="checked" name="gender" id="gender" value="male" />男
+			<input type="radio" name="gender" id="gender" value="female" />女
+
+			<select name="">
+				<option value="1">北京</option>
+				<option selected="selected" value="2">上海</option>
+				<option value="3">深圳</option>
+			</select>
+		</form>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			// 过滤表单元素可用的
+			//			$("input:enabled").each(function() {
+			//				console.log(this)
+			//
+			//			})
+			//			// 过滤表单元素不可用的
+			//			$("input:disabled").each(function() {
+			//				console.log(this)
+			//
+			//			})
+			// 过滤单选按钮
+			//			$("input:checked").each(function() {
+			//				console.log(this)
+			//
+			//			})
+			// 过滤选中的下拉框
+			$("option:selected").each(function() {
+				console.log(this)
+
+			})
+		</script>
+	</body>
+
+</html>

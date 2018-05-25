@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--
+			this 代表自己,就是当前元素
+		-->
+		<select id="city" onchange="onchangeFn(this)">
+			<option value="bj">北京</option>
+			<option value="sh">上海</option>
+			<option value="sz">深圳</option>
+		</select>
+		
+		
+		<script type="text/javascript">
+			function onchangeFn(obj) {
+				console.log(obj.value)
+			}
+		</script>
+
+		<!--<script type="text/javascript">
+			function onchangeFn() {
+				var selectTag = document.getElementById("city")
+				console.log(selectTag.value)
+			}
+		</script>-->
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			// 创建一个正则表达式的对象
+			// 指定规则
+			// 全部是数字 ,11位
+			// 第一位只能是1
+			// 第二位 3456789
+
+			// ^主键盘区,6上面的字符 ,代表开始
+			// $主键盘区,4上面的字符 ,代表结束
+			var reg = new RegExp("^1[^012]\\d{9}$");
+
+			var tel = "13123462789";
+			// 检验数据
+			var result = reg.test(tel);
+			console.log(result);
+		</script>
+	</body>
+
+</html>

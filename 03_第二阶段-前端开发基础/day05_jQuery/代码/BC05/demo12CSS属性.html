@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS属性的设置和获取</title>
+
+		<style type="text/css">
+			#div1 {
+				border: solid red 1px;
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="div1">
+			111111111
+		</div>
+
+		<div id="div2">
+			222222222
+		</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 参数1 : 属性名字,加引号
+			// 参数2 : 属性值,加引号
+
+			// 设置一个属性的方式
+			//			$("#div2").css("color","red")
+			// 设置多个属性,格式{"属性":"属性值","属性":"属性值"...}
+			// 设置多个属性的时候,使用,作为分隔符
+			// JSON
+			$("#div2").css({
+				"color": "red",
+				"border": "solid red 1px",
+				"width": "100px",
+				"height": "100px"
+			})
+			// 使用css("属性名")的方法可以获取所有属性的值
+			console.log($("#div2").css("width"))
+			// 个别属性,提供了方法,可以直接获取
+			console.log($("#div2").width())
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+	<head>
+		<title>左右选中.html</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+		</script>
+		<style>
+			input[type='button'] {
+				width: 50px;
+			}
+		</style>
+
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+
+				// 把选中的数据中第一条数据添加到右侧
+				$("#toRight1").click(function() {
+					$("#right").append($("#left option:selected:first"))
+				})
+
+				// 把选中的数据添加到右侧
+				$("#toRight2").click(function() {
+					$("#right").append($("#left option:selected"))
+				})
+
+				// 把左侧所有的数据添加到右侧
+				$("#toRight3").click(function() {
+					$("#right").append($("#left option"))
+				})
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td>
+					<!--
+						multiple : 能否多选
+						size: 一次可以展示多少条数据
+					-->
+					<select id="left" multiple="true" style="width:100px" size="10">
+						<option>環</option>
+						<option>芈</option>
+						<option>琅</option>
+						<option>琊</option>
+						<option>爨</option>
+						<option>甄</option>
+						<option>槑</option>
+						<option>夔</option>
+					</select>
+				</td>
+				<td>
+					<input type="button" value=">" id="toRight1"><br>
+					<input type="button" value=">>" id="toRight2"><br>
+					<input type="button" value=">>>" id="toRight3"><br><br>
+					<input type="button" value="<" id="toLeft1"><br>
+					<input type="button" value="<<" id="toLeft2"><br>
+					<input type="button" value="<<<" id="toLeft3">
+				</td>
+				<td>
+					<select id="right" multiple="true" style="width:100px" size="10">
+
+					</select>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

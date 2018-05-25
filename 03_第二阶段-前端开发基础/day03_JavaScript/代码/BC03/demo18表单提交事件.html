@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<form onsubmit="return checkForm()">
+			用户名:<input type="text" id="username" name="usr" value="" /><br />
+			<input type="submit" value="注册" />
+		</form>
+
+		<script type="text/javascript">
+			function checkForm() {
+
+				var inputTag = document.getElementById("username");
+				var usernameInput = inputTag.value;
+				if(usernameInput == "zhangsan") {
+					return false;
+				}
+
+				return true;
+
+			}
+		</script>
+	</body>
+
+</html>

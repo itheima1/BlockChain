@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>获取后面的所有兄弟</title>
+	</head>
+
+	<body>
+
+		<div>div (doesn't match since before #prev)</div>
+		<span id="prev">span#prev</span>
+		<div>div sibling1111111111111</div>
+
+		<div>div sibling
+			<div id="small">div niece</div>
+		</div>
+		<span>span sibling (not div)</span>
+		<div>div sibling</div>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			// 后面的所有兄弟
+			// 在这个页面上,id="prev"的span标签之后有4个兄弟节点,三个是div,注意id="small"的div不是兄弟!!!!
+			// 因此下面的代码执行后,得到的数组长度为3
+			var arr = $("#prev~div")
+
+			console.log(arr.length)
+			// 下面的代码是获取id="prev"的span标签之后,第一个是div的兄弟节点
+			var arr2 = $("#prev+div")
+
+			console.log(arr2[0])
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表单选择器</title>
+	</head>
+
+	<body>
+
+		<form>
+
+			<input type="password" />
+			<input type="" />
+			<input type="radio" />
+			<input type="checkbox" />
+
+			<select name="city">
+				<option value="">beijing</option>
+			</select>
+
+			<textarea name="" rows="" cols=""></textarea>
+
+			<input type="submit" value="注册" />
+		</form>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// :input 过滤所有的表单元素,包括input, textarea,select
+			//			var arr = $(":input")
+			// input 之过滤input元素
+			var arr = $("input")
+			for(var i = 0; i < arr.length; i++) {
+				console.log(arr[i])
+			}
+		</script>
+
+	</body>
+
+</html>

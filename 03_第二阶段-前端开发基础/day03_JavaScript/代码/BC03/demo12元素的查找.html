@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<script type="text/javascript">
+			// 页面加载完成之后,调用的函数
+			window.onload=function(){
+							// 根据ID查找元素  dg
+
+			//			var pId = document.getElementById("pId");
+			//			console.log(pId)
+
+			// 获取当前页面所有的p标签
+			// 根据标签名查找元素
+			//			var pTags = document.getElementsByTagName("p")
+			//			
+			//			for (var i = 0; i < pTags.length; i++) {
+			//				console.log(pTags[i])
+			//			}
+
+			// 根据类名查找元素
+			var pTags = document.getElementsByClassName("pClass")
+			console.log(pTags.length)
+			}
+			
+			
+			
+
+		</script>
+	</head>
+
+	<body>
+
+		<p class="pClass">这是一个段落</p>
+		<p class="pClass">这是第二个段落</p>
+		<p>这是第3个段落</p>
+
+	</body>
+
+</html>

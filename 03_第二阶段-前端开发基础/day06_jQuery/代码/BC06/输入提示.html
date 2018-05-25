@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=QSTGxzGCCkBdHXuRuYGGRIjE7A6dPZ6O"></script>
+		<title>关键字输入提示词条</title>
+	</head>
+
+	<body>
+
+		<div id="r-result">请输入:<input type="text" id="suggestId" size="20" value="百度" style="width:150px;" /></div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var ac = new BMap.Autocomplete( //建立一个自动完成的对象
+		{
+			"input": "suggestId"
+
+		});
+</script>

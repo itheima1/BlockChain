@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<!--
+			1. 下载资源
+			2. 所有的第三方jQuery插件都是依赖jQuery,所以必须引入jQuery
+			3. 引用第三方插件的js文件,引用文件的顺序不可以打乱的.必须先引入jQuery
+			4. 可选(某些插件需要使用CSS样式文件,同样需要引入)
+				(某些插件提供有国际化插件,i18n,如果需要可以引入)
+			5. 在入口函数中调用validate()方法
+			6. 格式
+			
+				$("#formId").validate({
+					// 指定校验规则
+					rules: {
+						name属性值: 校验规则名字,
+						name属性值: {
+							校验规则名字1: 值1,
+							校验规则名字2: 值2
+						}
+					},
+					// 指定提示信息
+					messages: {
+						name属性值: 提示,
+						name属性值: {
+							校验规则名字1: 提示1,
+							校验规则名字2: 提示2
+						}						
+					}
+				})	
+			7. 自定义校验规则
+			jQuery.validator.addMethod("规则名", function(value, element) {
+				// value 代表用户输入的内容
+				// 自定义的规则
+				// return true代表符合校验规则
+				// return false代表不符合校验规则
+				return ;
+			}, 默认提示信息);			
+		-->
+
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/messages_zh.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			jQuery.validator.addMethod("checknum", function(value, element) {
+				var reg = new RegExp("^1[3456789]\\d{9}$");
+
+				return reg.test(value);
+			}, "您输入的手机号不符合规则,请检查");
+
+			$(function() {
+				// 校验表单元素的方法
+				// 格式: 表单元素.validate({
+				// 指定校验的规则
+				//					rules:{
+				// name属性的值:规则
+				//},
+				// 指定提示信息
+				//					messages:{
+				// name属性的值:提示信息
+				//}
+				//				})
+				// 多个规则,中间用逗号分隔
+				$("#formId").validate({
+					rules: {
+						// 必填
+						username: "required",
+						password: {
+							// 必须
+							required: true,
+							// 只能是数字
+							number: true
+						},
+						repassword: {
+							// 必须
+							required: true,
+							// 要和某一个字段保持一致
+							equalTo: '[name="password"]'
+						},
+						zuixiaozhi: {
+							min: 16
+						},
+						shuzhiqujian: {
+							range: [12, 20]
+						},
+						phonenum: "checknum"
+					},
+					messages: {
+						username: "这是你的用户名,你必须写一下",
+						password: {
+							// 必须
+							required: "你必须写一下",
+							// 只能是数字
+							number: "这里是能写数字哦"
+						},
+						repassword: {
+							// 必须
+							required: "重复密码也必须填一下",
+							// 要和某一个字段保持一致
+							equalTo: '两次输入的密码不一样'
+						},
+						zuixiaozhi: {
+							min: "你还不能玩这个游戏"
+						}
+					}
+				})
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<form id="formId" action="">
+
+			手机号：<input type="text" name="phonenum" /> <br/> 必填：
+			<input type="text" name="username" /> <br/> 必填数字：
+			<input type="text" name="password" /> <br /> 必填重复：
+			<input type="text" name="repassword" /> <br /> 最小值：
+			<input type="text" name="zuixiaozhi" /> <br /> 区间：
+			<input type="text" name="shuzhiqujian" /> <br />
+			<input type="submit" value="提交" />
+		</form>
+	</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>文档的处理</title>
+	</head>
+
+	<body>
+
+		<ul id="uid">
+			<li>beijing</li>
+			<li>shanghai</li>
+			<li>shenzhen</li>
+
+		</ul>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var gz = $("<li>").html("guangzhou")
+			
+			// 方法名字长的就是新创建的节点的方法
+
+			// 把广州添加到列表的内部的后面,是子节点
+			//			$("#uid").append(gz)
+			//			gz.appendTo($("#uid"))
+			//把广州添加到列表的内部的前面,是子节点
+			//			$("#uid").prepend(gz)
+			//			gz.prependTo($("#uid"))
+			// 把广州添加到列表的外部的后面,是兄弟节点
+			//$("#uid").after(gz)
+			//			gz.insertAfter($("#uid"))
+			// 把广州添加到列表的外部的前面,是兄弟节点
+			//			$("#uid").before(gz)
+			gz.insertBefore($("#uid"))
+		</script>
+	</body>
+
+</html>

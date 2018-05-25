@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>待办事项</title>
+	</head>
+
+	<body>
+
+		<input type="text" id="id_input" /> <input type="button" value="确定" onclick="addItem()" />
+		<ul id="id_ul">
+			<li>吃饭</li>
+			<li>睡觉</li>
+			<li>打豆豆</li>
+
+		</ul>
+		<!--
+			
+
+			
+			
+		-->
+
+		<script type="text/javascript">
+			//	1. 按钮绑定一个点击事件
+			function addItem() {
+				//		
+				//			2. 获取用户输入的内容
+				var inputTag = document.getElementById("id_input");
+				var content = inputTag.value;
+				//			3. 创建li元素,把用户输入的内容添加到li标签中
+				// 新建一个li元素
+				var liTag = document.createElement("li")
+				// 指定li标签中的内容
+				liTag.innerHTML = content;
+				//			4. 把创建的li元素添加到无序列表
+				//获取到ul标签
+				var ulTag = document.getElementById("id_ul")
+				// 把新建的li元素追加到ul之后
+				ulTag.appendChild(liTag)
+				// 清空输入框
+				inputTag.value = ""
+			}
+		</script>
+	</body>
+
+</html>

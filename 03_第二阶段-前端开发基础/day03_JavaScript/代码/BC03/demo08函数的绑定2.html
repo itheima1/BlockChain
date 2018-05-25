@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			// 监听页面加载完成的事件
+			window.onload = function() {
+				// 1. 查找元素
+				var id_input = document.getElementById("id_input");
+				// 2. 派发事件
+				id_input.onclick = function() {
+					document.write("登录成功")
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<input type="button" value="登录" id="id_input" />
+
+		<!--
+	HTML代码执行的顺序 : 从上往下,从左往右
+-->
+
+		<!--
+	函数绑定的第二种方式 : 事件的派发
+
+-->
+
+	</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>历史记录</title>
+	</head>
+	<body>
+		
+		<a href="demo06location.html">打开第六个页面</a>
+		<br />
+		<input type="button" onclick="goforward()" value="前进" />
+		<input type="button" onclick="goback()" value="后退" />
+		
+		<script type="text/javascript">
+			function goforward(){
+				history.forward()
+				
+			}
+			function goback(){
+				history.back()
+			}
+		</script>
+	</body>
+</html>

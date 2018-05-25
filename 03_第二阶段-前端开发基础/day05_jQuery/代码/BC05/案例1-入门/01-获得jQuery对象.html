@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+
+	</head>
+
+	<body>
+		<input type="text" id="username" value="jack" />
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8">
+		</script>
+		<script type="text/javascript">
+			// 最标准的方式
+			//			window.jQuery()
+			//jQuery
+			// 实际开发中使用的方式. $ 等价于jQuery
+			// dom编程
+			var inputDom = document.getElementById("username");
+			//			console.log(inputDom.value)
+
+			// jQuery的方式获取input
+			// jQuery的选择器和CSS的选择器格式是一样的
+			// 使用jQuery的方式获取input对象
+			var inputJquery = $("#username")
+			// jQuery的方式获取value
+			//			console.log(inputJquery.val())
+		</script>
+	</body>
+
+</html>

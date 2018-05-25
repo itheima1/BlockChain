@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>操作元素中的内容</title>
+	</head>
+
+	<body>
+
+		<input type="text" id="username" value="zhangsan" />
+
+		<p id="pid">this is a p
+			<a href="#">aaaaa</a>
+		</p>
+
+		<p id="pid2"></p>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			// 获取value
+			//			console.log($("#username").val())
+			// 设置value
+			//			$("#username").val("lisi")
+
+			// 获取标签中的内容
+			// 获取所有的内容,包括里面的表
+			//			console.log($("#pid").html())
+			//			// 获取所有的文本,如果中间内嵌有标签,是无法获取到的
+			//			console.log($("#pid").text())
+			// 添加内容的时候,如果有标签,会把内容当做标签去解析
+			//			$("#pid2").html('<a href="#">aaaaa</a>')
+			// 添加内容的时候,如果有标签,会把内容当做普通文本去解析
+			$("#pid2").text('<a href="#">aaaaa</a>')
+		</script>
+	</body>
+
+</html>

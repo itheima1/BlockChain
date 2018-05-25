@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>透明度动画</title>
+
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				border: red solid 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<input type="button" value="fadeIn" onclick="fadeIn()" />
+		<input type="button" value="fadeOut" onclick="fadeOut()" />
+		<input type="button" value="fadeToggle" onclick="fadeToggle()" />
+		<input type="button" value="fadeTo" onclick="fadeTo()" />
+
+		<div id="div1">
+
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function fadeIn() {
+				// 透明度 0 -> 1
+				$("#div1").fadeIn(800,"linear",function(){
+					alert("动画完成了")
+				})
+			}
+
+			function fadeOut() {
+				// 透明度 1 -> 0
+				$("#div1").fadeOut()
+			}
+
+			function fadeToggle() {
+				// 切换状态  扳机
+				$("#div1").fadeToggle()
+			}
+			
+			
+			function fadeTo(){
+				// 指定透明度
+				$("#div1").fadeTo(800,0.2)
+			}
+		</script>
+
+	</body>
+
+</html>

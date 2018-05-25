@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				border: #FF0000 solid 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="div1" onmousedown="onmousedownFn()" onmouseenter="onmouseenterFn()" onmouseleave="onmouseleaveFn()" onmousemove="onmousemoveFn()" onmouseout="onmouseoutFn()" onmouseover="onmouseoverFn()" onmouseup="onmouseupFn()" onmousewheel="onmousewheelFn()">
+
+		</div>
+
+		<script type="text/javascript">
+			function onmousedownFn() {
+				console.log("鼠标按下")
+			}
+
+			function onmouseenterFn() {
+					console.log("鼠标")
+			}
+
+			function onmouseleaveFn() {
+				console.log("鼠标离开")
+			}
+
+			function onmousemoveFn() {
+				console.log("鼠标移动")
+			}
+
+			function onmouseoutFn() {
+				console.log("鼠标离开")
+			}
+
+			function onmouseoverFn() {
+				console.log("鼠标悬停在上方")
+			}
+
+			function onmouseupFn() {
+				console.log("鼠标抬起")
+			}
+
+			function onmousewheelFn() {
+				console.log("鼠标滚轮事件")
+			}
+		</script>
+	</body>
+
+</html>

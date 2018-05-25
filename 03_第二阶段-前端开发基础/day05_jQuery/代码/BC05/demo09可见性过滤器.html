@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>可见性过滤器</title>
+	</head>
+
+	<body>
+
+		<div style="display:none;">Hider!</div>
+
+		<div>Hider!</div>
+
+		<form>
+			<input type="hidden" />
+
+			<input type="hidden" />
+			<input type="hidden" />
+		</form>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// :hidden 主要用来过滤隐藏域和display设置为none的元素,页面上不可见的元素也可以过滤出来
+			//:visible 过滤页面上可见的元素
+			//			var arr = $("body *:hidden")
+			var arr = $("body *:visible")
+			console.log(arr.length)
+			for(var i = 0; i < arr.length; i++) {
+
+				console.log(arr[i])
+
+			}
+		</script>
+	</body>
+
+</html>

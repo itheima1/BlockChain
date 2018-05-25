@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>内容过滤器</title>
+	</head>
+
+	<body>
+		<ul>
+			<li>001</li>
+			<li>002</li>
+			<li>003</li>
+			<li>004</li>
+			<li>005</li>
+			<li>
+				<span>006</span>
+			</li>
+		</ul>
+		<!--
+	过滤出来包含span标签的li标签
+-->
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 过滤文本中包含005的元素
+			var arr = $("li:contains('005')")
+			console.log(arr.length)
+
+			// 过滤包含span标签的元素
+			//				var arr = $("li").has("span")
+			//			console.log(arr.length)
+		</script>
+	</body>
+
+</html>

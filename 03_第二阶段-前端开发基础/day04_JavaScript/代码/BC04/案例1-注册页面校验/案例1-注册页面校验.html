@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面校验</title>
+	</head>
+	<script>
+		var flag = false;
+
+		// 校验手机号
+		function checkNum() {
+			// 获取用户输入的内容
+			var num = document.getElementById("username").value;
+			// 定义正则表达式
+			var reg = new RegExp("^1[3456789]\\d{9}$");
+			// 校验手机号
+			var result = reg.test(num);
+
+			if(result) {
+				document.getElementById("username_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("username_msg").innerHTML = "您输入的手机号有误,请检查";
+				flag = false;
+			}
+		}
+		// 校验密码
+		function checkPsw() {
+			var password = document.getElementById("password").value
+
+			if(password.length >= 6) {
+				document.getElementById("password_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("password_msg").innerHTML = "密码长度至少为6位";
+				flag = false;
+			}
+		}
+		// 校验重复密码
+		function checkrePsw() {
+			var password = document.getElementById("repassword").value
+
+			if(password.length >= 6) {
+				document.getElementById("repassword_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("repassword_msg").innerHTML = "密码长度至少为6位";
+				// 如果密码长度校验失败,后续的逻辑就不需要再执行了
+				flag = false;
+				return;
+			}
+			// 比对两次密码
+			var psw = document.getElementById("password").value
+			if(psw == password) {
+				document.getElementById("repassword_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("repassword_msg").innerHTML = "两次密码不一致,请检查";
+				flag = false;
+			}
+		}
+
+		function checkEmail() {
+			// 1111 @ qq .com .cn
+			// 英文字符数字-_,至少是1位
+			// .英文字符数字-_,至少是1位
+			// ([.][a-zA-Z0-9-_]+)+
+			// 获取用户输入的内容
+			var email = document.getElementById("email").value;
+			// 定义正则表达式
+			var reg = new RegExp("^[a-zA-Z0-9-_]+@[a-zA-Z0-9-_]+([.][a-zA-Z0-9-_]+)+$");
+			// 校验手机号
+			var result = reg.test(email);
+
+			if(result) {
+				document.getElementById("email_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("email_msg").innerHTML = "您输入的邮箱有误,请检查";
+				flag = false;
+			}
+		}
+
+		function checkUserName() {
+			var usr = document.getElementById("name").value;
+			if(usr.length >= 5) {
+				document.getElementById("name_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("name_msg").innerHTML = "用户名长度至少5位";
+				flag = false;
+			}
+		}
+
+		function checkCode() {
+			var usr = document.getElementById("checkcode").value;
+			if(usr.length >= 4) {
+				document.getElementById("checkcode_msg").innerHTML = "";
+				flag = true;
+			} else {
+				document.getElementById("checkcode_msg").innerHTML = "验证码错误";
+				flag = false;
+			}
+		}
+
+		function checkForm() {
+
+			checkNum();
+			checkPsw();
+			checkrePsw();
+			checkEmail();
+			checkUserName();
+			checkCode();
+
+			return flag;
+		}
+	</script>
+
+	<body>
+		<form onsubmit="return checkForm()">
+			<table width="60%" height="60%" align="center" bgcolor="#ffffff">
+				<tr>
+					<td colspan="3">会员注册USER REGISTER</td>
+				</tr>
+				<tr>
+					<td width="20%">手机号:</td>
+					<td width="40%"><input type="text" name="username" id="username" onblur="checkNum()"></td>
+					<td width="40%"><span id="username_msg"></span></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" name="password" id="password" onblur="checkPsw()"></td>
+					<td><span id="password_msg"></span></td>
+				</tr>
+				<tr>
+					<td>确认密码:</td>
+					<td><input type="password" name="repassword" id="repassword" onblur="checkrePsw()"></td>
+					<td><span id="repassword_msg"></span></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="email" id="email" onblur="checkEmail()"></td>
+					<td><span id="email_msg"></span></td>
+				</tr>
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" name="name" id="name" onblur="checkUserName()"></td>
+					<td><span id="name_msg"></span></td>
+				</tr>
+				<tr>
+					<td>性别:</td>
+					<td>
+						<input type="radio" name="sex" value="男" checked="checked"> 男
+						<input type="radio" name="sex" value="女" />女
+					</td>
+				</tr>
+				<tr>
+					<td>出生日期</td>
+					<td>
+						<input type="date" name="birthday" id="birthday">
+
+					</td>
+					<td><span id="birthday_msg"></span></td>
+				</tr>
+				<tr>
+					<td>验证码</td>
+					<td>
+						<input type="text" name="checkcode" id="checkcode" onblur="checkCode()">
+					</td>
+					<td><span id="checkcode_msg"></span></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="注册" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+
+</html>

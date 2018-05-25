@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器</title>
+	</head>
+
+	<body>
+
+		<p class="pclass"></p>
+		<input type="text" name="username" id="username" value="zhangsan" />
+		<input type="button" name="username" id="username" value="zhangsan" />
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			// 第一种使用方式,过滤包含某一属性的元素
+			//			var arr = $("input[type]")
+			// 第二种使用方式,过滤属性=属性值的元素
+			var arr = $("input[type='text']")
+
+			for(var i = 0; i < arr.length; i++) {
+				console.log(arr[i])
+			}
+		</script>
+	</body>
+
+</html>

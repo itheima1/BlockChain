@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+
+	</head>
+
+	<body>
+
+		<img src="../img/AssassinsCreed013.png" alt="" />
+		<input type="text" id="username" value="jack" />
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8">
+		</script>
+		<script type="text/javascript">
+			// 在整个页面所有的资源,包括引用的第三方网络的资源,全部加载完成以后,才会执行
+			window.onload = function() {
+				//				var inputJquery = $("#username")
+				//				// jQuery的方式获取value
+				//				console.log(inputJquery.val())
+
+				console.log("onload")
+			}
+
+			// DOM结构已完全加载时
+			$(document).ready(function() {
+				//				var inputJquery = $("#username")
+				//				// jQuery的方式获取value
+				//				console.log(inputJquery.val())
+
+				console.log("ready")
+			})
+			
+			//  ready方法的简写,入口函数
+			// 一定要写在引用的jqury代码之后
+			$(function(){
+				console.log("ready")
+			})
+		</script>
+	</body>
+
+</html>

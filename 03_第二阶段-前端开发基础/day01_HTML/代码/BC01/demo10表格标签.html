@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表格标签</title>
+	</head>
+
+	<body>
+		<!--
+			代表是一个表格
+			tr : table row 行
+			td : table data 数据格
+			th : table header 表头
+		-->
+		<!--
+			table的属性
+				align : 对齐方式
+				border : 边框的宽度
+				width : 表格的宽度
+				padding : 内边距
+				cellpadding : 格子里的内容和格子的间距
+				cellspacing : 格子和格子之间的间距
+				cols : column列
+				frame : 外边框的显示
+				rules : 内边框的显示
+		-->
+		<table rules="rows" frame="above" border="10px" align="center" width="90%" cellpadding="20px" cellspacing="0">
+			<!--
+				指定标题
+				caption标签必须写在 table标签之后
+			-->
+			<caption>人员信息表</caption>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>张三</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>李四</td>
+				<td>22</td>
+			</tr>
+		</table>
+		
+		<table border="1px" align="center" width="90%" >
+			<!--
+				指定标题
+				caption标签必须写在 table标签之后
+			-->
+			<caption>人员信息表</caption>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>张三</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>李四</td>
+				<td>22</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

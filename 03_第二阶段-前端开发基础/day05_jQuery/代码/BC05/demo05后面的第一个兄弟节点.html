@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>获取后面的第一个兄弟节点</title>
+	</head>
+
+	<body>
+		<!--
+	获取label之后的第一个input
+-->
+		<form>
+			<label for="name">Name:</label>
+			<input name="name" id="name">
+			<input name="usr" id="usr">
+
+		</form>
+		<input name="none">
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 在这个页面上label标签之后有两个input
+			// 下面的选择器获取到的是第一个input,不会获取到第二个input
+			// 因此这个选择器的作用是获取后面的第一个兄弟节点
+			console.log($("label+input").length)
+			console.log($("label+input")[0])
+		</script>
+
+	</body>
+
+</html>

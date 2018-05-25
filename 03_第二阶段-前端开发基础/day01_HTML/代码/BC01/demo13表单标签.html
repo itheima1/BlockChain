@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+
+	<body>
+		<!--
+			常用的子标签
+			input
+				属性: type,指定输入框的类型
+					text : 普通的输入框
+					password : 密码输入框
+					radio : 单选
+					checkbox : 多选
+					file : 文件选择框
+					
+					submit : 提交按钮
+					reset : 清空按钮
+					button : 普通按钮,事件要由自己来处理
+					
+					hidden : 隐藏域
+					
+					
+					
+					image : 图片
+					
+					
+			select : 下拉框
+				
+			textarea : 文本域
+			
+			通用的属性
+				name : 指定传递数据给后台的key的名字
+					对单选框和复选框进行分组
+					数据要传输给后台,必须指定该属性
+				value : 
+						指定按钮上的文本
+						指定选择框在选中的状态,传递给后台的数据
+			placeholder : 用在输入框中的,提示文本
+			checked="checked" : 指定单选框和复选框的选中状态
+			selected="selected" :指定下拉框的选中状态
+			
+		-->
+		
+		<!--
+			?username=zhangsan&password=123&gender=on&hobby=on&hobby=on&city=%E5%8C%97%E4%BA%AC&introduce=ziwojieshao
+			get请求,在原地址的后面以?拼接参数,传递给后台
+			key = value的形式去拼接,如果有多个参数,参数和参数之间使用&连接起来
+		-->
+		<!--
+			action : 指定传递数据的地址
+			method : 请求方式
+				get : 默认.传递数据的时候,是拼接在原地址的后面.传输的数据的大小一般是1Kb
+				post : 隐藏起来.相对来说,post请求更加安全.在传输文件的时候一定是使用post请求
+		-->
+		<form action="" method="post">
+			用户名: <input value="zhangsan" name="username" type="text" placeholder="请输入您的用户名"/><br />
+			 密码 : <input name="password" type="password" placeholder="请输入您的密码"/><br /> 
+			 性别: <input type="radio" name="gender" checked="checked" value="male"/> 男<input value="female" type="radio" name="gender" /> 女<br />
+			  爱好: <input value="football" name="hobby" type="checkbox" checked="checked"/>足球<input type="checkbox" name="hobby"   value="basketball" />篮球<input type="checkbox"  name="hobby"  value="pingpang" />乒乓球<br />
+			   头像: <input type="file" name="icon"/><br /> 
+			   城市:
+			<select  name="city" >
+				<option>--请选择--</option>
+				<optgroup label="北方城市">
+					<option selected="selected" value="bj">北京</option>
+					<option value="tj">天津</option>
+
+				</optgroup>
+				<optgroup label="南方城市">
+					<option value="shh">上海</option>
+					<option value="sz">深圳</option>
+				</optgroup>
+
+			</select><br />
+			自我介绍 : 
+			<!--
+				rows :行数
+				cols : 列数
+			-->
+			<textarea  name="introduce"  cols="20" rows="5" placeholder="请输入您的自我介绍"></textarea>
+				<br />
+			<input type="submit" value="注册" />
+			<input type="reset" value="清空" />
+			<input type="button" value="登录" />
+			<input type="image" src="img/logo.gif" />
+		</form>
+	</body>
+
+</html>

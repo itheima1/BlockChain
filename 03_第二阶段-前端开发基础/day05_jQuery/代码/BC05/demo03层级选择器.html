@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>层级选择器</title>
+		
+		<style type="text/css">
+			div{
+				border: solid red 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+	为无序列表 <ul class="topnav">的所有直接子元素加上边框。
+-->
+
+
+
+		<ul class="topnav">
+			<li>Item 1</li>
+			<li>Item 2
+				<ul>
+					<li>Nested item 1</li>
+					<li>Nested item 2</li>
+					<li>Nested item 3</li>
+				</ul>
+			</li>
+			<li>Item 3</li>
+		</ul>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			/* 子选择器, 不包含孙子节点
+			 */
+			$(".topnav> li").css("border","solid red 1px")
+		</script>
+	</body>
+
+</html>

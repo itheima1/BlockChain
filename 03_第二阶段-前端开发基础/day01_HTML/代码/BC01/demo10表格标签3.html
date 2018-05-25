@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>表格标签</title>
+	</head>
+
+	<body>
+		<!--
+			行的删除 : 删除tr包括里面的td
+			列的删除 : 要删除所有行中对应的列,否则表格会发生错位
+		-->
+
+		<table border="1px" align="center" width="90%">
+			<!--
+				指定标题
+				caption标签必须写在 table标签之后
+			-->
+			<caption>人员信息表</caption>
+			<!--
+				表头
+			-->
+			<thead>
+				<tr>
+					<th>ID</th>
+					
+					<th>Age</th>
+				</tr>
+			</thead>
+			<!--
+				内容区
+			-->
+			<tbody>
+				<tr>
+					<td>001</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>22</td>
+				</tr>
+				
+			</tbody>
+			<!--
+				页脚
+			-->
+			<tfoot>
+
+			</tfoot>
+
+		</table>
+	</body>
+
+</html>

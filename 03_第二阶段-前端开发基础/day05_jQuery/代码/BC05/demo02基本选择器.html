@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>基本选择器</title>
+	</head>
+
+	<body>
+		<div id="div1">DIV</div>
+
+		<span class="span1">SPAN</span>
+		<p class="span1">P <button>Button</button></p>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			// 全局选择器
+
+			//			var arr = $("body *")
+			//
+			//			for(var i = 0; i < arr.length; i++) {
+			//				console.log(arr[i])
+			//
+			//			}
+
+			// 类选择器
+
+			//			var arr = $(".span1")
+			//			console.log(arr.length)
+
+			// 标签选择器
+
+			//			var arr = $("span")
+			//			console.log(arr.length)
+
+			// ID选择器
+
+			//			var arr = $("#div1")
+			//			console.log(arr.length)
+
+			// 群组选择器
+
+			$("#div1,.span1").css("color","red")
+		
+		</script>
+	</body>
+
+</html>

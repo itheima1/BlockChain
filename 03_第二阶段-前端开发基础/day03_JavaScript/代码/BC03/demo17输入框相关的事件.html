@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		用户名:<input type="text" id="username" onfocus="onfocusFn()" onblur="onblurFn()" />
+
+		<script type="text/javascript">
+			function onfocusFn() {
+				console.log("获取到焦点了")
+			}
+
+			function onblurFn() {
+				console.log("失去焦点了")
+			}
+		</script>
+	</body>
+
+</html>

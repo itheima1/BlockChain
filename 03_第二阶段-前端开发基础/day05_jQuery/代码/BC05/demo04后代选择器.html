@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>后代选择器</title>
+	</head>
+
+	<body>
+
+		<!--
+			查找所有表单下的input后代元素。
+		-->
+		<form>
+			<div>Form is surrounded by the green outline</div>
+			<label>Child:</label>
+			<input name="name" />
+
+			<fieldset>
+				<label>Grandchild:</label>
+				<input name="newsletter" />
+			</fieldset>
+
+		</form>
+		Sibling to form: <input name="none" />
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			
+			/*
+			 后代选择器,获取后代,包含孙子节点
+			 * */
+			var arr = $("form input")
+			console.log(arr.length)
+		</script>
+	</body>
+
+</html>

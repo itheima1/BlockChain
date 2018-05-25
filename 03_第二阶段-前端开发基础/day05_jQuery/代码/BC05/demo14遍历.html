@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>遍历</title>
+	</head>
+
+	<body>
+
+		<ul>
+			<li>beijing</li>
+			<li>shanghai</li>
+			<li>shenzhen</li>
+		</ul>
+
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			//			jQuery对象的遍历
+			//			$("li").each(function(index, ele) {
+			//				console.log(index + "====" + ele)
+			//			})
+
+			//				$("li").each(function() {
+			//				// this: 代表当前遍历到的对象
+			//				console.log(this)
+			//			})
+
+			// 数组的遍历
+			var arr = new Array(1, "3", "ddddd");
+			// 参数1 : 要遍历的对象
+			// 参数2 : 要执行的逻辑
+			//			 $.each(arr, function() {
+			//			 	
+			//			 	console.log(this)
+			//			 });
+
+			$.each(arr, function(index, ele) {
+
+				console.log(index + "====" + ele)
+			});
+		</script>
+	</body>
+
+</html>

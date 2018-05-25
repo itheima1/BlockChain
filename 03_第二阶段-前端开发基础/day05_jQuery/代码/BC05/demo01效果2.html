@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>slide动画</title>
+
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				border: red solid 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<input type="button" value="slideDown" onclick="slideDown()" />
+		<input type="button" value="slideup" onclick="slideup()" />
+		<input type="button" value="slidetoggle" onclick="slidetoggle()" />
+
+		<div id="div1">
+
+		</div>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function slideDown() {
+				// 向下滑动显示元素, 回调函数
+				$("#div1").slideDown(800,"linear",function(){
+					alert("动画完成了")
+				})
+			}
+
+			function slideup() {
+				// 向上滑动隐藏元素
+				$("#div1").slideUp()
+			}
+
+			function slidetoggle() {
+				// 切换状态  扳机
+				$("#div1").slideToggle()
+			}
+		</script>
+
+	</body>
+
+</html>

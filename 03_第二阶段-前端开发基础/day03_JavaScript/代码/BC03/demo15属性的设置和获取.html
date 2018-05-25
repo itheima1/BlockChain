@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<input city="shenzhen" type="button" name="regist" id="btn" value="注册" />
+
+		<script type="text/javascript">
+			var inputTag = document.getElementById("btn");
+			// 获取属性的时候,如果是本身就有的属性,可以采用.的方式获取里面的值
+			// 自定义属性就不能使用这种方式
+			// getAttribute("属性名")一定可以获取到属性值,不管是自定义的还是本身就有的
+			//			console.log(inputTag.getAttribute("type"))
+
+			// 设置属性的时候,如果是本身就有的属性,可以采用赋值的方式设置里面的值
+			// 自定义属性就不能使用这种方式
+// setAttribute(key,value)一定可以设置属性值的,不管是自定义的还是本身就有的
+			//inputTag.type="text"
+			inputTag.setAttribute("city", "guangzhou")
+		</script>
+	</body>
+
+</html>

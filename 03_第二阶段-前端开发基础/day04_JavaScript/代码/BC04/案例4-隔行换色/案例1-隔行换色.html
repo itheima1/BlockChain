@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<script type="text/javascript">
+			window.onload = function() {
+				// 获取所有的行
+				var trs = document.getElementsByTagName("tr");
+				for(var i = 0; i < trs.length; i++) {
+
+					if(i % 2 == 0) {
+						trs[i].style.backgroundColor = "red";
+					} else {
+						trs[i].style.backgroundColor = "blue";
+					}
+
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<table id="tab1" border="1" width="800" align="center">
+
+			<tr style="background-color: #999999;">
+				<th>分类ID</th>
+				<th>分类名称</th>
+				<th>分类描述</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>电脑办公</td>
+				<td>电脑办公类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>家居饰品</td>
+				<td>家居饰品类商品</td>
+				<td>
+					<a href="">修改</a>|
+					<a href="">删除</a>
+				</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

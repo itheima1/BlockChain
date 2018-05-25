@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>其他属性的获取和设置</title>
+	</head>
+
+	<body>
+
+		<input type="button" id="btn" value="注册" />
+		<input id="rd" type="radio" value="male" name="gender" />男
+		<input type="radio" value="female" name="gender" />女
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script>
+			// 获取属性的值
+			//			console.log($("#btn").attr("type"))
+			// 设置一个属性
+			//	$("#btn").attr("city", "beijing")
+			// 设置多个属性,方式类似css属性的设置
+			//			$("#btn").attr({
+			//				"city": "beijing",
+			//				"gender": "male"
+			//			})
+			// 设置属性,首先考虑attr,如果attr不生效,再考虑使用prop
+			//			$("#rd").attr("checked", "checked")
+			//
+			//			console.log("attr:" + $("#rd").attr("checked"))
+			//			console.log("prop:" + $("#rd").prop("checked"))
+			// 删除属性
+			$("#rd").removeAttr("name");
+		</script>
+	</body>
+
+</html>

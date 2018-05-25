@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>流程控制语句</title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//	break : 跳出循环
+			// continue : 跳过本次循环
+
+			outer: for(var i = 0; i < 10; i++) {
+				for(var j = 0; j < 10; j++) {
+					if(i == 5 && j == 5) {
+						break outer;
+					}
+
+					document.write("i:" + i + ",j:" + j )
+				}
+				
+				document.write("<br/>")
+			}
+
+			//			var a = 3;
+			//
+			//			switch(a) {
+			//				case 1:
+			//					document.write("周1");
+			//					break;
+			//				case 2:
+			//					document.write("周2");
+			//					break;
+			//				case 3:
+			//					document.write("周3");
+			//					break;
+			//				case 4:
+			//					document.write("周4");
+			//					break;
+			//				case 5:
+			//					document.write("周5");
+			//					break;
+			//				case 6:
+			//					document.write("周6");
+			//					break;
+			//				case 7:
+			//					document.write("周7");
+			//					break;
+			//				default:
+			//					document.write("出错了");
+			//					break;
+			//			}
+
+			//			if(a == 1) {
+			//				document.write("周1");
+			//			} else
+			//			if(a == 2) {
+			//				document.write("周2");
+			//			} else
+			//			if(a == 3) {
+			//				document.write("周3");
+			//			} else
+			//			if(a == 4) {
+			//				document.write("周4");
+			//			} else
+			//			if(a == 5) {
+			//				document.write("周5");
+			//			} else
+			//			if(a == 6) {
+			//				document.write("周6");
+			//			} else
+			//			if(a == 7) {
+			//				document.write("周7");
+			//			} else {
+			//				document.write("出错了");
+			//			}
+		</script>
+	</body>
+
+</html>

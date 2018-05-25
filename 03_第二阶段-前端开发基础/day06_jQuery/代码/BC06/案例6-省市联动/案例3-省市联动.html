@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			// 定义二维数组:
+			var arr = new Array(4);
+			arr[0] = new Array("哈尔滨", "齐齐哈尔", "大庆", "佳木斯");
+			arr[1] = new Array("长春市", "吉林市", "四平市", "通化市");
+			arr[2] = new Array("沈阳市", "锦州市", "大连市", "铁岭市");
+			arr[3] = new Array("郑州市", "洛阳市", "安阳市", "南阳市");
+		</script>
+
+		<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$('[name="pro"]').change(function() {
+					// this 代表的是省的下拉列表
+					var cityArr = arr[this.value];
+					// 清空的操作
+					$('[name="city"]').html("<option>-请选择-</option>")
+					$.each(cityArr, function() {
+						// this 代表的是二维数组中每一个城市
+
+						// 新建的option节点
+						$('[name="city"]').append($("<option>").html(this))
+					});
+				})
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<form action="#" method="get">
+			<input type="hidden" name="id" value="007" /> 姓名:
+			<input name="username" value="xuduoduo" /><br> 密码:
+			<input type="password" name="password" value="123"><br> 性别:
+			<input type="radio" name="sex" value="1" checked="checked">男
+			<input type="radio" name="sex" value="0">女
+			<br> 爱好:
+			<input type="checkbox" name="hobby" value="eat">吃
+			<input type="checkbox" name="hobby" value="drink" checked="checked">喝
+			<input type="checkbox" name="hobby" value="sleep" checked="checked">睡
+			<br> 头像:
+			<input type="file" name="photo"><br> 籍贯:
+			<select name="pro">
+				<option>-请选择-</option>
+				<option value="0">黑龙江</option>
+				<option value="1">吉林</option>
+				<option value="2">辽宁</option>
+				<option value="3">河南</option>
+			</select>
+			<select name="city">
+				<option>-请选择-</option>
+			</select>
+			<br> 自我介绍:
+			<textarea name="intr" cols="40" rows="4">good!</textarea>
+			<br>
+			<input type="submit" value="保存" />
+			<input type="reset" />
+			<input type="button" value="普通按钮" />
+		</form>
+	</body>
+
+</html>
+<!--
+	
+-->

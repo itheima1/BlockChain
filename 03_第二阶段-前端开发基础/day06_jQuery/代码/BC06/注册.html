@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 14px;
+			}
+			
+			.cls {
+				clear: both;
+			}
+			
+			.logo {
+				width: 96%;
+				margin: 0 auto;
+			}
+			
+			.logo div {
+				position: relative;
+				float: left;
+			}
+			
+			.logo_left {
+				width: 33%;
+			}
+			
+			.logo_middle {
+				width: 43%;
+			}
+			
+			.logo_right {
+				width: 24%;
+			}
+			
+			a:link {
+				color: #338ACC;
+				text-decoration: none;
+			}
+			/* 未访问的链接 */
+			
+			a:visited {
+				color: #338ACC;
+				text-decoration: none;
+			}
+			/* 已访问的链接 */
+			
+			a:hover {
+				color: #23527c;
+				text-decoration: underline;
+			}
+			/* 鼠标移动到链接上 */
+			
+			a:active {
+				color: #23527c;
+				text-decoration: underline;
+			}
+			/* 选定的链接 */
+			
+			.logo_right {
+				padding-top: 20px;
+			}
+			
+			.nav {
+				width: 98%;
+				background-color: #222;
+				height: 50px;
+				margin: 0 auto;
+				border-radius: 5px;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			li {
+				display: inline;
+			}
+			
+			.nav_a {
+				display: inline-block;
+				width: 86px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+			}
+			
+			a.nav_a:link {
+				color: #9d9d9d;
+				text-decoration: none;
+			}
+			/* 未访问的链接 */
+			
+			a.nav_a:visited {
+				color: #9d9d9d;
+				text-decoration: none;
+			}
+			/* 已访问的链接 */
+			
+			a.nav_a:hover {
+				color: #fff;
+				text-decoration: none;
+				background-color: #000;
+			}
+			/* 鼠标移动到链接上 */
+			
+			a.nav_a:active {
+				color: #fff;
+				text-decoration: none;
+				background-color: #000;
+			}
+			
+			.nav_left {
+				position: relative;
+				float: left;
+			}
+			
+			.nav_right {
+				position: relative;
+				float: right;
+				line-height: 50px;
+				margin-right: 40px;
+			}
+			
+			.nav_right_input {
+				width: 170px;
+				height: 34px;
+				border-radius: 5px;
+				background-color: #fff;
+				padding-left: 16px;
+			}
+			
+			.nav_right_btn {
+				width: 70px;
+				height: 38px;
+				border-radius: 5px;
+				background-color: #fff;
+			}
+			
+			.footer {
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.footer img {
+				width: 100%;
+			}
+			
+			.container {
+				margin-top: 20px;
+				margin-bottom: 50px;
+				background-image: url(img/regist_bg.jpg);
+				height: 610px;
+				padding-top: 20px;
+			}
+			
+			table {
+				
+				padding-top: 30px;
+				width: 880px;
+				background-color: #fff;
+				margin: 0 auto;
+				border: solid #ccc 8px;
+			}
+			
+			tr {
+				width: 100%;
+				height: 40px;
+			}
+			
+			.td_left {
+				width: 20%;
+				text-align: right;
+				padding-right: 30px;
+			}
+			
+			.td_right {
+				width: 80%;
+			}
+			
+			.td_input_1,.td_input_2 {
+				width: 345px;
+				height: 30px;
+				border-radius: 5px;
+				background-color: #fff;
+			}
+			
+			.td_input_2{
+				width: 170px;
+				
+			}
+			
+			.td_btn{
+				width: 96px;
+				height: 30px;
+				background-color: red;
+				display: block;
+				text-align: center;
+				line-height: 30px;
+			
+			}
+			
+			
+			a.td_btn:link {
+				color: #fff;
+				text-decoration: none;
+			}
+			/* 未访问的链接 */
+			
+			a.td_btn:visited {
+				color: #fff;
+				text-decoration: none;
+			}
+			/* 已访问的链接 */
+			
+			a.td_btn:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+			/* 鼠标移动到链接上 */
+			
+			a.td_btn:active {
+				color: #fff;
+				text-decoration: none;
+			}
+			/* 选定的链接 */
+		</style>
+	</head>
+
+	<body>
+
+		<div class="logo">
+			<div class="logo_left">
+				<img src="img/logo2.png" />
+			</div>
+			<div class="logo_middle">
+				<img src="img/header.jpg" />
+			</div>
+			<div class="logo_right">
+				<a href="#">登录</a>
+				<a href="#">注册</a>
+				<a href="#">购物车</a>
+			</div>
+		</div>
+
+		<div class="cls">
+
+		</div>
+
+		<div class="nav">
+
+			<div class="nav_left">
+
+				<ul>
+					<li>
+						<a class="nav_a" href="#">首页</a>
+					</li>
+					<li>
+						<a class="nav_a" href="#">手机</a>
+					</li>
+					<li>
+						<a class="nav_a" href="#">电脑</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="nav_right">
+
+				<input class="nav_right_input" type="text" placeholder="Search" />
+				<input class="nav_right_btn" type="button" value="Submit" />
+			</div>
+
+		</div>
+		<div class="container">
+
+			<table>
+				<tr>
+					<td colspan="2">会员注册USER REGISTER </td>
+
+				</tr>
+				<tr>
+					<td class="td_left">用户名</td>
+					<td class="td_right">
+						<input type="text" class="td_input_1" />
+					</td>
+				</tr>
+				<tr>
+					<td class="td_left">密码</td>
+					<td class="td_right"> <input type="text" class="td_input_1" /></td>
+				</tr>
+				<tr>
+					<td class="td_left">确认密码</td>
+					<td class="td_right"> <input type="text" class="td_input_1" /></td>
+				</tr>
+				<tr>
+					<td class="td_left">Email</td>
+					<td class="td_right"> <input type="text" class="td_input_1" /></td>
+				</tr>
+				<tr>
+					<td class="td_left">姓名</td>
+					<td class="td_right"> <input type="text" class="td_input_1" /></td>
+				</tr>
+				<tr>
+					<td class="td_left">性别</td>
+					<td class="td_right">
+						<input type="radio" name="gender" />男
+						<input type="radio" name="gender" />女
+					</td>
+				</tr>
+				<tr>
+					<td class="td_left">出生日期</td>
+					<td class="td_right"> <input type="text" class="td_input_1" /></td>
+				</tr>
+				<tr>
+					<td class="td_left">验证码</td>
+					<td class="td_right"> <input type="text" class="td_input_2" />
+						<img src="img/captcha.jhtml.jpg"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="td_left"></td>
+					<td class="td_right">
+						
+						<a class="td_btn" href="#">注册</a>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="footer">
+			<img src="img/footer.jpg" />
+			<p>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">招贤纳士</a>
+				<a href="#">法律声明</a>
+				<a href="#">友情链接</a>
+			</p>
+			<p>Copyright © 2005-2016 传智商城 版权所有 </p>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>框架集</title>
+	</head>
+	<!--
+		框架标签和body标签不可以同时使用
+	-->
+	<!--
+		定义框架集
+	-->
+	<frameset rows="*,70%,10%">
+		<!--
+			src : 指定引用的页面的路径
+		-->
+
+		<frame src="demo12_top.html" />
+		<frameset cols="20%,*">
+			<frame src="demo12_left.html" />
+			<frame name="content" />
+		</frameset>
+		<frame src="demo12_bottom.html" />
+	</frameset>
+
+</html>
