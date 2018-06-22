@@ -1,0 +1,59 @@
+day08: jdbc
+
+	statement
+	注入的问题
+	
+	String sql = "";
+	Statement st= conn.createStatement(sql);
+	st.executeUpdate();
+	
+	preparestatement
+	
+	String sql = "insert into stu values (null , ? , ?)";
+	ps = conn.prepareStatement(sql);
+	ps.setString(1, "aobama");
+	ps.setInt(2,18);
+	ps.executeUpdate();
+	
+	
+	
+	
+	查询:
+		String sql = "select * from stu";
+		ps = conn.prepareStatement(sql);
+		ResultSet rs = ps.executeQuery();
+		while(rs.next()){
+			rs.getInt("id");
+			rs.getString("name")
+			rs.getInt("age")
+		}
+	
+	dao模式
+	> 要把有关数据库操作的代码给集中放到一个专门的类里面去。
+		专门的类得放在专门的包下。
+		
+	com.itheima.dao
+		|
+		|----UserDao
+				void save(Student stu);
+	com.itheima.dao.impl
+		|
+		|----UserDaoImpl
+		
+				void save(Student stu){
+					//就写以前在测试方法中执行保存操作的代码
+				}
+	
+	
+	连接池
+	
+		c3p0 , 阿里 ,hikari cp
+		
+		1. 在resources 下有一个配置文件 c3p0-config.xml
+		
+		2. 构建连接池
+			CombopoolDataSource pool = new CombopoolDataSource();
+			
+	工具
+		DbUtils 
+			QueryRunner

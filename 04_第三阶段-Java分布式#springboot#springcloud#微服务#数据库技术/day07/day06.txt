@@ -1,0 +1,65 @@
+sql语句
+
+	数据库的sql
+		
+		create database xxx;
+		
+		show databases;
+		
+		drop datbase xxx;
+	
+	
+	数据表的sql
+	
+		use xxx; //使用这个数据库
+		
+		* 建表
+		create table stu(id int primary key auto_increment , name varchar(20));
+		
+		* 删除表
+		drop table xxx;
+		
+		* 删除表的数据
+		delete from xxx;
+		
+		* 显示表的结构
+		desc xxx;
+		
+		* 更新表
+		
+		1. 添加列
+		alter table xxx add address varchar(25);
+		
+		2. 给某一个列增加约束
+		alter table xxx modify address varchar(25) unique not null;
+	
+	数据的sql(重点)
+	
+	
+		* 增加
+		insert into xxx values(null , '奥巴马',18);
+		
+		* 删除
+		delete from xxx where id = 1;
+		
+		* 更新
+		update xxx set age = 28 where id = 1 ;
+		
+		* 查询
+		select * from xxx;
+		
+		select *from xxx where id = 1 ;
+		
+		select count(id) from xxx;
+		
+		select * from xxx where name like '%张%';
+		
+		* 分页
+		select * from xxx limit 0 , 5 ; // 5, 5  //10 , 5 
+		
+		分组： 
+		select * from xxx group by category;
+		
+		
+	
+	

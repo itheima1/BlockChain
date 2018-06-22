@@ -1,0 +1,42 @@
+-- 1.返回拥有员工的部门名、部门号。(dept,emp)	
+select distinct d.deptno,d.dname from dept d,emp e where e.deptno=d.deptno;
+-- 2.工资多于smith的员工信息。
+第一步:select sal from emp where ename='smith';
+第二步:select * from emp where sal>?
+
+select * from emp where sal>(select sal from emp where ename='smith');
+-- 3.返回员工和其所属领导的姓名。（自连接）
+select e.ename,l.ename from emp e,emp l where e.mgr=l.empno;
+-- 4.返回雇员的雇佣日期早于其领导雇佣日期的员工及其领导姓名。(在日期类型可以直接比较)
+select e.ename,l.ename from emp e,emp l where e.mgr=l.empno and e.hiredate<l.hiredate;
+-- 5.返回员工姓名及其所在的部门名称。
+
+select e.ename,d.dname from emp e,dept d where e.deptno=d.deptno;
+-- 6.返回从事clerk工作的员工姓名和所在部门名称
+select e.ename,d.dname from emp e,dept d where e.deptno=d.deptno and e.job='clerk';
+-- 7.返回部门号及其本部门的最低工资。
+select deptno,min(sal) from emp group by deptno;
+
+-- 8.返回销售部(sales)所有员工的姓名。
+select deptno from dept where dname='sales';
+select ename from emp where deptno=30
+
+select ename from emp where deptno=(select deptno from dept where dname='sales')
+
+-- 9.返回工资多于平均工资的员工信息。
+select avg(sal) from emp;
+select * from emp where sal >?
+
+select * from emp where sal >(select avg(sal) from emp)
+
+-- 10.返回与SCOTT从事相同工作的员工。
+select job from emp where ename='SCOTT';
+select * from emp where job=?
+
+select * from emp where job=(select job from emp where ename='SCOTT') and ename <> 'SCOTT';
+
+-- 11.返回与30部门员工工资相同的员工姓名与工资。
+select sal from emp where deptno=30
+select ename,sal from emp where sal in(??)
+
+select ename,sal from emp where sal in(select sal from emp where deptno=30)

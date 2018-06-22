@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/PageDemo.iml" group="PageDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageDemo/PageDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/PageDemo/PageDemo_main.iml" group="PageDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PageDemo/PageDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/PageDemo/PageDemo_test.iml" group="PageDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RegisterDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RegisterDemo.iml" group="RegisterDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RegisterDemo/RegisterDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RegisterDemo/RegisterDemo_main.iml" group="RegisterDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RegisterDemo/RegisterDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RegisterDemo/RegisterDemo_test.iml" group="RegisterDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RequestResponseDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/RequestResponseDemo.iml" group="RequestResponseDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RequestResponseDemo/RequestResponseDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/RequestResponseDemo/RequestResponseDemo_main.iml" group="RequestResponseDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RequestResponseDemo/RequestResponseDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/RequestResponseDemo/RequestResponseDemo_test.iml" group="RequestResponseDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ThymeleafDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/ThymeleafDemo.iml" group="ThymeleafDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ThymeleafDemo/ThymeleafDemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ThymeleafDemo/ThymeleafDemo_main.iml" group="ThymeleafDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ThymeleafDemo/ThymeleafDemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ThymeleafDemo/ThymeleafDemo_test.iml" group="ThymeleafDemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/day02.iml" filepath="$PROJECT_DIR$/.idea/modules/day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/day02_main.iml" filepath="$PROJECT_DIR$/.idea/modules/day02_main.iml" group="day02" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/day02_test.iml" filepath="$PROJECT_DIR$/.idea/modules/day02_test.iml" group="day02" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,117 @@
+
+Cookie  & Session
+
+cookie : 存储在客户端的会话技术
+
+session : 存储在服务器端会话技术
+			借助cookie. 
+			
+Cookie:
+
+	1. cookie 入门
+	
+		服务器端产生，然后保存在客户端
+		
+		Cookie cookie = new Cookie("username" ,"admin" );
+		
+		cookie.setMaxAge(60);
+		
+		//
+		cookie.setDomain("www.itheima.com");
+		
+		response.addCookie(cookie);
+
+	2. cookie 案例 上次访问时间。
+	
+		
+		a. 完成基本的登录
+		
+		
+			Cookie cookie = new Cookie("last" , System.currentTimemills()+"");
+		
+			cookie.setMaxAge(60);
+		
+			response.addCookie()
+		
+		
+		b. 在考虑获取上次访问时间
+		
+			要想这次登录获取上次登录的时间，必须把
+			上次登录的时间给存起来。
+		
+			//如果有就返回cookie ，如果没有返回的是null
+			Cookie [] cookies = request.getCookies();
+			
+			if(cookies !=null){
+				for(){
+					cookie.getName();
+					
+					cookie.getValue();
+				}
+			}
+	
+Session:
+
+		
+	1. 基本使用：
+	
+		//存值
+		HtttpSession session = request.getSesion();
+		session.setAttribute("key" ,"");
+		
+		//取值
+		session.getAttribute("key")
+		
+		//id
+		
+		//让session销毁
+		session.invalidate();
+		
+		//移除session里面的某一份数据
+		session.removeAttribute("key");
+		
+	2. 生命周期：
+
+		创建：
+			第一次调用了request.getSession();
+		
+		销毁：
+			1. invalidate
+			
+			2. 关闭服务器
+			
+			3. 超时 , 30分钟
+			
+	3. 请问关闭浏览器会销毁session吗？
+		不会
+		
+		为什么第二次打开访问，拿不到以前的session值？
+		
+		因为第二次来了之后，没有以前的id值了，所以重新分配了一块空间。
+		
+		
+	4. 购物车
+
+		取值遍历显示： 
+		
+			th:text="${name}"
+			
+			th:value="${name}"
+			
+			
+			遍历：
+			
+				th:each="product:${list}"
+		
+					th:value="${product.name}"
+		
+				th:each="entry:${map}"
+				
+					entry.key.name  ---> getName()
+					
+					entry.value
+		
+		
+		
+		
+		

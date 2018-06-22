@@ -1,0 +1,108 @@
+1. Http协议
+
+2. get & post
+
+	不同点： 
+		a. get请求数据会拼接到url地址，post请求不拼接，流的形式写
+		
+		b. get请求提交的数据有限制，post请求没有限制。
+		
+		c. 安全性考虑，post更高一点。
+		
+3. request & response
+
+	request : 其实就是包含了客户端提交上来的信息
+	
+		public String aa(String username){}
+	
+		public String aa(HttpServletRequest request){
+			request.getParameter("username")
+		}
+	
+	response: 响应结果给客户端，就靠它
+	
+		写数据给客户端
+		
+		public String aa(HttpServletResponse response){
+			
+			response.getWrite().write("success");
+			
+			return "aaaa";
+		}
+
+4. 跳转页面
+
+	result.html;
+	请求转发
+	
+		public String aa(){
+			return "result.html";
+			
+			return "forward:result.html"
+			
+			request.getRequestDispatch("").forward(request,response);
+		}
+	
+	重定向
+	
+		public String aa(){
+			
+			
+			return "redirect:result.html"
+			
+			response.sendRedirect("result.html");
+		}
+	
+	区别：
+		
+		1. 请求转发只会发送一次请求，重定向需要发送两次
+		
+		2. 请求转发是服务器内部跳转， 所以只能跳转到项目资源，但是重定向是
+			服务器告诉浏览器要到达某个位置，所以可以写任意的资源位置
+			
+		3. 请求转发地址显示的是开始请求的路径地址， 重定向地址显示的是目标的路径地址
+		
+5.  Thymeleaf 模板
+
+	用来在html页面上显示数据
+	
+	1. 添加依赖
+	
+	2. 模板页面不能放那4个文件夹，只能放 resources/templates
+	
+	3. 在模板页面上要引入命名空间  , 模板里面标签必须有结束
+	
+		<html xmlns:th="http://www.thymealeaf.org"/>
+		
+	4. 存数据
+	
+		//返回值要的是模板的名称，不要后缀
+		public String aa(Model model){
+			
+			model.addAttribute("name" , "zhangsan");
+			
+			return "result";
+		
+		}
+		
+		public ModelAndView aa(){
+			
+			ModelAndView m = new ModelAndView();
+			
+			m.addObject("name","zhangsan");
+			
+			m.setView("result");
+			
+			return m;
+		}
+	
+	5. 取数据
+	
+		取数据，必须在属性里面写  ${}
+		
+		<p th:text="${name}"></p>
+		
+		
+		<input th:value="${name}">
+		
+		

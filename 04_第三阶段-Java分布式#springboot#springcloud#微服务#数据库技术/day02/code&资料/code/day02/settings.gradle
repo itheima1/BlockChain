@@ -1,0 +1,6 @@
+rootProject.name = 'day02'
+include 'RequestResponseDemo'
+include 'PageDemo'
+include 'ThymeleafDemo'
+include 'RegisterDemo'
+

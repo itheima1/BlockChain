@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>testpage~!</h2>
+
+
+    <span th:text="${address}"></span>
+
+
+
+    <p th:text="${address}"></p>
+
+    1.  取值的写法是： ${属性的名称} ， 这种写法不能独立存在，
+    必须放在th:xxx="${属性名称}"
+
+    2. 如果数据要放置到标签的中间形成文本，那么使用th:text,
+    如果数据要填充到标签的value属性中，那么使用th:value
+    <br/>
+
+    <input type="text" th:value="${address}"/>
+
+
+</body>
+</html>

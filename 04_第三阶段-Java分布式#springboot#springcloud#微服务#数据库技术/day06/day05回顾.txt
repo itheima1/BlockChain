@@ -1,0 +1,103 @@
+day05:
+
+	Ajax
+	
+		可以在浏览器发起异步请求，结果还是回到
+		当前页面。可以做到不刷新整个页面，然后
+		只更新某一个位置的数据
+		
+		校验用户名 | 
+		xmlhttprequest
+		
+		GET
+		
+		POST
+		
+		
+	
+	Jquery
+	
+		GET
+			$.get(url,function(result){})
+		
+		POST
+			$.post(url,{key1:value1,key2:value2},function(result){})
+		Ajax:
+
+			$.ajax({
+				url:xxxx,
+				data:{key1:value1,key2:value2},
+				success:function(result){
+				}
+			});
+	Xml
+	
+		可扩展的标记性语言 , 和html差不多，有开始有结束标签。
+		标签名可以自定义。
+		
+		<?xml version="1.0" encoding="utf-8"?>
+		<aa>
+			<stu>
+				<name>admin</name>
+				<age>18</age>
+			</stu>
+			
+			<stu>
+				<name>admin</name>
+				<age>18</age>
+			</stu>
+		</aa>
+		
+		解析xml:
+			dom & sax  --->dom4j
+			
+			heima.xml
+			
+			SaxReader reader = new SaxReader();
+			
+			InputStream is = ParseXml.class.getClassLoader().getResourceAsStream("heima.xml");
+			Document document = reader.read(is);
+			
+			//1. 拿根标签， 然后获取根的所有孩子，然后遍历。
+			Element rootElement = document.getRootElement();
+			List<Element> list = rootElement.elements();
+			
+			//2. 通过xpath xml路径语言直接去抓出来<stu>标签
+			List<Node> list =  document.selectNodes("//stu");
+	
+	Json:
+	
+		对象类型：
+		
+			var aa = {key1:value1,key2:value2}
+			
+			aa.key1
+		
+		数组类型
+			["aa","bb","cc"]
+		
+		数组装对象
+			[{},{},{}]
+			
+		前端取值:
+			对象.属性
+			
+		controller如何返回json数据？
+		
+			必须包含注解@ResponseBody。
+			
+	//@RestController	
+	
+	
+	@Controller
+	public class UserController{
+			
+		@ResponseBody
+		public User aa(){
+			User user = new User();
+			
+			..
+			
+			return user;
+		}
+	}	

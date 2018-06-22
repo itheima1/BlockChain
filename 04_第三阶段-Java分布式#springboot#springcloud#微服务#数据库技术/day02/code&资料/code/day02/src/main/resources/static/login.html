@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+application.properties
+
+    <!--action:意思就是表示form表达的数据提交到哪里去。这里写上方法的映射名称即可-->
+    <h2>以下表单采用Get请求</h2><br>
+    <form action="doGet" method="get">
+        账号:<input type="text" name="username"/><br><br>
+        密码:<input type="password" name="password"/><br><br>
+        <input type="submit" value="登录"/><br>
+    </form>
+
+    <br><br><br>
+
+    <h2>以下表单采用Post请求</h2><br>
+    <form action="doPost" method="post">
+        账号:<input type="text" name="username"/><br><br>
+        密码:<input type="password" name="password"/><br><br>
+        <input type="submit" value="登录"/><br>
+    </form>
+
+</body>
+</html>

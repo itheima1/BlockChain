@@ -1,0 +1,49 @@
+day04: Filter & Resuful
+
+Filter
+
+	1. 入门
+	
+	@WebFilter("/*")
+	@Component
+	public class MyFilter implement Filter{
+		
+		void init(){}
+		
+		
+		//request: 是服务器，这个框架，这个项目，封装了所有请求过来的信息
+		
+		//response :服务器如果要给客户端响应。都用它操作
+		void doFilter(ServletRequest request , response ,chain){
+		
+			
+			//这句话是固定写法。会执行后面的过滤器，如果还有的话，
+			//如果没有就执行目标资源， html --->  controller -->
+			chain.doFilter(request.response);
+		}
+		
+		void destroy(){}
+	}
+	
+RestFul:
+
+	关心两个地方： 
+		地址路径  &  请求方式
+		
+		crud:
+		
+			增加：localhost:8080/user  POST
+			删除： localhost:8080/user/1  Delete
+			更新： localhost:8080/user/1  PUT
+			查询： localhost:8080/user/2 GET
+	
+		localhost:8080/user?id=2
+		
+		
+		localhost:8080/user/2
+		
+		@RequestMapping("/user/{id}")
+		public String save(@PathVariable int id){
+		
+		}
+	

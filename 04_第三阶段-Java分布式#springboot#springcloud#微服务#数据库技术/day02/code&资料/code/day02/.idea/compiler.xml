@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <bytecodeTargetLevel>
+      <module name="day02_main" target="1.8" />
+      <module name="day02_test" target="1.8" />
+      <module name="PageDemo_main" target="1.8" />
+      <module name="PageDemo_test" target="1.8" />
+      <module name="RegisterDemo_main" target="1.8" />
+      <module name="RegisterDemo_test" target="1.8" />
+      <module name="RequestResponseDemo_main" target="1.8" />
+      <module name="RequestResponseDemo_test" target="1.8" />
+      <module name="ThymeleafDemo_main" target="1.8" />
+      <module name="ThymeleafDemo_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

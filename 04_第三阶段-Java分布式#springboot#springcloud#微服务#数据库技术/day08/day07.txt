@@ -1,0 +1,88 @@
+day07:
+
+	多表关系
+	
+		多表关系其实就是主外键关系。
+		外键里面存放的值是另一张表的主键值 , null
+		
+		多表关系的分类：
+		
+			一对多
+			多对多
+			一对一
+		
+		建立关系：
+		
+			1. 在数据库这边创建关系。 命令
+			
+			2. 项目里面，使用代码来进行关联。
+	
+		category(id)  &  product (cid)
+		
+		一			多
+		alter table product add constraint category_FK foreign key(cid)
+			references category(id)
+	
+		多对多的关系一般会拆分成两个一对多。
+		
+	多表关系的查询：
+	
+		1. 子查询
+			一个查询里面嵌套另一个查询
+			select * from product where cid = (select id from category where name = '手机');
+		
+		2. 内连接  : 查询手机分类的商品。
+			select * from category c, product p where c.name = '手机' and c.id = p.cid;
+			
+			select * from category c inner join product p on c.name = '手机' and c.id = p.cid;
+		3. 外连接
+		
+			左外和右外 ，只要关注关键字即可。
+			
+			左外： 查询所有分类，并且显示所有分类的库存商品。
+			select * from category c left join product p on  c.id = p.cid;
+	
+			右外其实和左外差不多。
+	
+	linux
+	
+		文件操作
+			1. 生成文件
+				touch aa.txt
+			
+			2. 删除文件
+				rm -rf aa.txt
+			
+			3. 拷贝 & 剪切
+			
+				cp aa.txt /usr/local/heima
+				
+				mv aa.txt /usr/local/heima
+		
+		文档编辑
+		
+			vi | vim
+			
+			vim aa.txt ---> i | a | o --->1231243kskfdh-->ESC ---> :wq | :q!
+		
+		
+		压缩&解压缩
+		
+			压缩： 
+				tar -zcvf aa.tar.gz aa.txt bb.txt
+				
+			解压：
+				tar -zxvf aa.tar.gz
+				tar -zxvf aa.tar.gz -C /usr/local/heima
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
