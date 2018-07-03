@@ -1,0 +1,72 @@
+.x-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.x-page-left {
+    width: 48%;
+}
+
+.x-page-right {
+    width: 48%;
+}
+
+.x-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.x-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.x-img {
+    width: 16%;
+    height: 16%;
+}
+
+p.x-desc {
+    font: initial;
+    font-size: 20px;
+    text-align: left;
+    height: 20%;
+    margin: 0 2%;
+}
+
+h1.x-title, h2.x-title, h3.x-title, h4.x-title, h5.x-title, h6.x-title {
+    text-transform: initial;
+}
+
+h1.x-left, h2.x-left, h3.x-left, h4.x-left, h5.x-left, h6.x-left {
+    text-align: left;
+}
+
+h1.x-red, h2.x-red, h3.x-red, h4.x-red, h5.x-red, h6.x-red {
+    color: red;
+}
+
+h1.x-blue, h2.x-blue, h3.x-blue, h4.x-blue, h5.x-blue, h6.x-blue {
+    color: dodgerblue;
+}
+
+h1.x-fm, h2.x-fm, h3.x-fm, h4.x-fm, h5.x-fm, h6.x-fm, p.x-fm, ul.x-fm, li.x-fm, div.x-fm {
+    font-size: 30px;
+}
+
+h1.x-fs, h2.x-fs, h3.x-fs, h4.x-fs, h5.x-fs, h6.x-fs, p.x-fs, ul.x-fs, li.x-fs, div.x-fs {
+    font-size: 24px;
+}
+
+h1.x-fss, h2.x-fss, h3.x-fss, h4.x-fss, h5.x-fss, h6.x-fss, p.x-fss, ul.x-fss, li.x-fss, div.x-fss {
+    font-size: 18px;
+}
+

@@ -1,0 +1,1062 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>SpringCloud入门</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="css/fira_code.css">
+
+    <link rel="stylesheet" href="lib/plugin/tagcloud/tagcloud.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <style>
+        .part-left {
+            width: 400px;
+            height: auto;
+            float: left;
+        }
+
+        .part-right {
+            width: 400px;
+            height: auto;
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-transition="zoom">
+            <h2 class="x-title">Spring Cloud 入门</h2>
+            <h2 class="fragment fade-up x-title">微服务入门</h2>
+        </section>
+
+        <section data-transition="zoom">
+            <section>
+                <h2>微服务介绍</h2>
+
+                <div class="x-content">
+
+                    <div class="x-row fragment fade-up">
+                        <img class="x-img" src="images/jlewis.jpg">
+                        <p class="x-desc">James Lewis is a Principal Consultant at ThoughtWorks and member of the
+                            Technology Advisory Board. James' interest in building applications out of small
+                            collaborating services stems from a background in integrating enterprise systems at scale.
+                            He's built a number of systems using microservices and has been an active participant in the
+                            growing community for a couple of years.</p>
+                    </div>
+
+                    <div class="x-row fragment fade-up">
+                        <img class="x-img" src="images/mf.jpg">
+                        <p class="x-desc">Martin Fowler is an author, speaker, and general loud-mouth on software
+                            development. He's long been puzzled by the problem of how to componentize software systems,
+                            having heard more vague claims than he's happy with. He hopes that microservices will live
+                            up to the early promise its advocates have found.</p>
+                    </div>
+
+                </div>
+
+                <a class="fragment fade-up" href="https://www.martinfowler.com/articles/microservices.html"
+                   target="_blank">Martin flowler
+                    微服务介绍博客</a>
+
+            </section>
+
+            <!-- 解读一 -->
+            <section>
+                <p class="x-desc">
+                    "Microservices" - yet another new term on the crowded streets of software architecture. Although our
+                    natural inclination is to pass such things by with a contemptuous glance, this bit of terminology
+                    describes a style of software systems that we are finding more and more appealing. We've seen many
+                    projects use this style in the last few years, and results so far have been positive, so much so
+                    that for many of our colleagues this is becoming the default style for building enterprise
+                    applications. Sadly, however, there's not much information that outlines what the microservice style
+                    is and how to do it.
+                </p>
+                <p></p>
+                <p class="x-desc fragment fade-up">
+                    “微服务” - 在软件架构拥挤的街道上又一个新名词。 尽管我们的自然倾向是以轻蔑的眼光来传递这样的东西，但这些术语描述了一种我们发现越来越吸引人的软件系统风格。
+                    我们已经看到许多项目在过去几年中都采用了这种风格，迄今为止的结果是积极的，因此对于我们的许多同事来说，这正成为构建企业应用程序的默认风格。 可悲的是，没有太多的信息概述了微服务的风格以及如何去做。
+                    <br>
+                    <span style="float: right;">-- 出自Google翻译 --</span>
+                </p>
+            </section>
+
+            <section>
+                <h2>解读一</h2>
+                <ul>
+                    <li class="fragment fade-up">微服务是一种<label class="fragment highlight-red">软件系统风格</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h4>三层架构</h4>
+                <img src="images/microservice01.png">
+            </section>
+
+
+            <section>
+                <p class="x-desc">
+                    In short, the microservice architectural style [1] is an approach to developing a single application
+                    as a suite of small services, each running in its own process and communicating with lightweight
+                    mechanisms, often an HTTP resource API. These services are built around business capabilities and
+                    independently deployable by fully automated deployment machinery. There is a bare minimum of
+                    centralized management of these services, which may be written in different programming languages
+                    and use different data storage technologies.
+                </p>
+                <p></p>
+                <p class="x-desc">
+                    简而言之，微服务架构风格[1]是一种<label class="fragment highlight-red">将单个应用程序作为一套小型服务开发的方法</label>，<label
+                        class="fragment highlight-red">每种应用程序都在其自己的进程中运行</label>，并<label class="fragment highlight-red">与轻量级机制（通常是HTTP资源API）进行通信</label>。
+                    这些<label class="fragment highlight-red">服务是围绕业务功能构建的</label>，<label class="fragment highlight-red">可以通过全自动部署机制独立部署</label>。
+                    这些服务的<label class="fragment highlight-red">集中管理最少</label>，<label class="fragment highlight-red">可以用不同的编程语言编写</label>，并<label
+                        class="fragment highlight-red">使用不同的数据存储技术</label>。
+                    <br>
+                    <span style="float: right;">-- 出自Google翻译 --</span>
+                </p>
+            </section>
+            <section>
+                <h2>解读二</h2>
+                <ul>
+                    <li>一个应用程序就是一个服务</li>
+                    <li>一个服务是具有自己独立的进程的</li>
+                    <li>服务间通过Http协议进行通信</li>
+                    <li>服务是根据业务构建的</li>
+                    <li>每个服务可以用不同语言构建</li>
+                    <li>每个服务可以有自己独立的存储技术</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+
+            <section>
+                <h2>微服务的架构特点</h2>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Componentization via Services</h3>
+                <h2 class="fragment">服务组件化</h2>
+                <p class="fragment">业务被差分为更小的逻辑进行实现</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Organized around Business Capabilities</h3>
+                <h2 class="fragment">围绕业务进行组织</h2>
+                <p class="fragment">逻辑只为绕具体的业务来实现</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Products not Projects</h3>
+                <h2 class="fragment">产品不是项目</h2>
+                <p class="fragment">要有做产品的心态</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Smart endpoints and dumb pipes</h3>
+                <h2 class="fragment">智能端点和哑管</h2>
+                <p class="fragment">服务间调用的方式</p>
+                <aside class="notes">
+                    <ul>
+                        <li>服务间调用的方式</li>
+                        <li>实时中间件</li>
+                        <li>异步中间件</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Decentralized Governance</h3>
+                <h2 class="fragment">去中心化治理</h2>
+                <p class="fragment">组件能针对不同的业务特点选择不同的技术平台</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Decentralized Data Management</h3>
+                <h2 class="fragment">去中心化数据管理</h2>
+                <p class="fragment">组件能针对不同的业务特点选择不同的存储技术</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Infrastructure Automation</h3>
+                <h2 class="fragment">基础设施自动化</h2>
+                <p class="fragment">自动化测试、自动化部署</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Design for failure</h3>
+                <h2 class="fragment">容错机制</h2>
+                <p class="fragment">能快速定位错误，并快速修复错误</p>
+            </section>
+
+            <section>
+                <h3 class="fragment grow x-title">Evolutionary Design</h3>
+                <h2 class="fragment">演进式设计</h2>
+                <p class="fragment">根据业务发展，可以不断进化升级</p>
+            </section>
+
+        </section>
+
+        <section data-transition="convex-in convex-out">
+            <h4>???蒙圈???</h4>
+            <div class="tagcloud tagcloud-light">
+                <a>服务组件化</a>
+                <a>去中心化治理</a>
+                <a>去中心化数据管理</a>
+                <a>容错机制</a>
+                <a>演进式设计</a>
+                <a>懵逼</a>
+                <a><img style="width: 60px;height: 60px" src="images/mb.jpg"></a>
+                <a>?????</a>
+            </div>
+        </section>
+
+        <section>
+
+            <section>
+                <h2>黑马大饭店</h2>
+                <h2 class="fragment fade-up">第一季</h2>
+            </section>
+
+            <section>
+                <h2>场景一</h2>
+            </section>
+
+            <section>
+                <img src="images/single03.png">
+            </section>
+
+            <section>
+                <img src="images/single02.png">
+            </section>
+
+            <section>
+
+                <h2>传统的单应用架构</h2>
+                <img class="fragment fade-up" src="images/SingleApplication.png">
+
+            </section>
+
+            <section>
+                <h2>分布式的单应用架构</h2>
+                <img src="images/single01.png">
+            </section>
+
+            <section>
+
+                <h2>单应用架构优缺点</h2>
+
+                <div class="x-page">
+                    <div class="x-page-left fragment fade-up">
+                        <h6 class="x-blue x-fm">优点</h6>
+                        <ul class="x-fs">
+                            <li>前期易于开发</li>
+                            <li>前期易于部署</li>
+                            <li>前期易于分布式扩展</li>
+                        </ul>
+                    </div>
+                    <div class="x-page-right fragment fade-up">
+                        <h6 class="x-red x-fm">缺点</h6>
+                        <ul class="x-fs">
+                            <li>难于维护和迭代</li>
+                            <li>IDE工具过载</li>
+                            <li>运行时容器环境过载</li>
+                            <li>后期部署困难</li>
+                            <li>后期团队协作困难</li>
+                            <li>技术框架固定</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="fragment fade-up" href="http://microservices.io/patterns/monolithic.html"
+                   target="_blank">结论出处</a>
+
+            </section>
+
+            <section>
+                <h2>场景二</h2>
+            </section>
+
+
+            <section>
+                <img src="images/micro01.png">
+            </section>
+
+            <section>
+                <img src="images/micro02.png">
+            </section>
+
+            <section>
+                <h2>微服务应用架构</h2>
+            </section>
+
+            <section>
+
+                <h2>微服务应用架构</h2>
+                <img src="images/MicroServiceArt.png">
+
+            </section>
+
+            <section>
+                <h2>分布式的微服务架构</h2>
+                <img src="images/micro03.png">
+            </section>
+
+            <section>
+                <h2>微服务框架优缺点</h2>
+
+                <div class="x-page">
+                    <div class="x-page-left fragment fade-up">
+                        <h6 class="x-blue x-fm">优点</h6>
+                        <ul class="x-fs">
+                            <li>
+                                支持持续交付和部署大型复杂的应用程序
+                                <ul class="x-fss">
+                                    <li>更易于测试</li>
+                                    <li>更易于部署</li>
+                                    <li>开发人员更灵活</li>
+                                </ul>
+                            </li>
+                            <li>
+                                每个微服务都相对较小
+                                <ul class="x-fss">
+                                    <li>开发人员更容易理解</li>
+                                    <li>IDE更快地提高了开发人员的工作效率</li>
+                                    <li>应用程序启动速度更快，这使开发人员的工作效率更高，并加快了部署速度</li>
+                                </ul>
+                            </li>
+                            <li>容错机制更高</li>
+                            <li>消除对技术堆栈的长期承诺</li>
+                        </ul>
+                    </div>
+                    <div class="x-page-right fragment fade-up">
+                        <h6 class="x-red x-fm">缺点</h6>
+                        <ul class="x-fs">
+                            <li>
+                                分布式系统复杂度高
+                                <ul class="x-fss">
+                                    <li>测试更复杂</li>
+                                    <li>开发者必须实现服务间的通信机制</li>
+                                    <li>如果不使用分布式事务，会很难实现跨多个服务的用例</li>
+                                    <li>实现跨多个服务的用例需要团队间的更认真的合作</li>
+                                </ul>
+                            </li>
+                            <li>
+                                生产环境部署复杂度高
+                            </li>
+                            <li>
+                                内存消耗更多
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <a class="fragment fade-up" href="http://microservices.io/patterns/microservices.html" target="_blank">结论出处</a>
+
+            </section>
+        </section>
+
+
+        <section>
+
+            <h2>到底什么是微服务</h2>
+
+            <div class="x-page">
+
+                <div class="x-page-left fragment fade-up">
+                    <img src="images/m.jpg">
+                </div>
+
+                <div class="x-page-right fragment fade-up">
+                    <img src="images/c.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">什么是Spring Cloud</h2>
+                <p>Spring Cloud是快速构建分布式系统的<label class="fragment highlight highlight-current-red">工具集</label></p>
+                <p>可以实现微服务</p>
+            </section>
+
+            <section>
+                <h2>第一个微服务</h2>
+                <img src="images/micro04.png" class="fragment fade-up">
+                <img src="images/eureka02.png" class="fragment fade-up">
+            </section>
+
+            <section>
+                <h2>服务注册与发现</h2>
+
+                <ul>
+                    <li class="fragment fade-up">Eureka Server 服务注册中心</li>
+                    <li class="fragment fade-up">Eureka Client 服务注册者</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="x-title">Eureka Server服务注册中心</h2>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka Server服务注册中心</h2>
+                <h2 class="x-title x-left x-fs">步骤一: 配置依赖</h2>
+                <pre><code>compile('org.springframework.cloud:spring-cloud-starter-eureka-server')</code></pre>
+
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka Server服务注册中心</h2>
+                <h2 class="x-title x-left x-fs">步骤二: 标注Application类</h2>
+                <pre><code>@EnableEurekaServer
+@SpringBootApplication
+public class EurekaServerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaServerApplication.class, args);
+    }
+}</code></pre>
+
+                <p class="x-fm">@EnableEurekaServer 表示当前应用为服务注册中心</p>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka Server服务注册中心</h2>
+                <h2 class="x-title x-left x-fs">步骤三: 配置application.yml</h2>
+                <pre><code>eureka:
+    client:
+        register-with-eureka: false
+        fetch-registry: false</code></pre>
+
+                <ul class="x-fm">
+                    <li>register-with-eureka: 表示是否需要将自己注册到注册中心</li>
+                    <li>fetch-registry: 是否向注册中心定时更新自己状态</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="x-title">Eureka client服务注册者</h2>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka client服务注册者</h2>
+                <h2 class="x-title x-left x-fs">步骤一: 配置依赖</h2>
+                <pre><code>compile('org.springframework.cloud:spring-cloud-starter-eureka')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka client服务注册者</h2>
+                <h2 class="x-title x-left x-fs">步骤二: 标注Application类</h2>
+                <pre><code>@EnableDiscoveryClient
+@SpringBootApplication
+public class EurekaClientApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(EurekaClientApplication.class, args);
+    }
+}</code></pre>
+
+                <p class="x-fm">@EnableDiscoveryClient 表示当前应用需要注册到注册中心</p>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Eureka client服务注册者</h2>
+                <h2 class="x-title x-left x-fs">步骤三: 配置application.yml</h2>
+                <pre><code>eureka:
+    client:
+        register-with-eureka: false
+        fetch-registry: false</code></pre>
+
+                <ul class="x-fm">
+                    <li>register-with-eureka: 表示是否需要将自己注册到注册中心</li>
+                    <li>fetch-registry: 是否向注册中心定时更新自己状态</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>注册中心的高可用性</h2>
+                <img src="images/eureka03.png" class="fragment fade-up">
+            </section>
+            <section>
+                <h2>注册中心间相互注册</h2>
+                <h2 class="x-title x-left x-fm">注册中心一</h2>
+                <pre><code>server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka</code></pre>
+                <h2 class="x-title x-left x-fm">注册中心二</h2>
+                <pre><code>server:
+  port: 8762
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title">Spring Boot配置active</h2>
+                <ul>
+                    <li>resources目录下新建 application.yml</li>
+                    <li>resources目录下新建 application-xxx.yml</li>
+                    <li>在application.yml中配置
+                        <pre><code>spring:
+  profiles:
+    active: xxx</code></pre>
+                    </li>
+                </ul>
+
+                <p>application-xxx.yml的命名中，xxx作为spring.profiles.active的配置，指明按照application-xxx.yml进行配置应用</p>
+            </section>
+
+            <section>
+                <h2 class="x-title">Idea下配置测试active</h2>
+                <img src="images/active01.png">
+            </section>
+
+            <section>
+                <h2 class="x-title">命令行下测试运行active</h2>
+                <ul>
+                    <li>打包程序</li>
+                    <li>
+                        <pre><code>java -jar myproject.jar --spring.profiles.active=xxx</code></pre>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>小结</h2>
+                <ul>
+                    <li>至少有一个注册中心</li>
+                    <li>所有服务都是服务注册者(服务提供者)</li>
+                    <li>开发和部署是两个概念</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>微服务概念形态</h2>
+                <img src="images/eureka01.png">
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>黑马大饭店</h2>
+                <h2 class="fragment fade-up">第二季</h2>
+            </section>
+
+            <section>
+                <img src="images/feign01.png">
+            </section>
+
+            <section>
+                <img src="images/funny01.png">
+            </section>
+
+            <section>
+                <img src="images/feign02.png">
+                <img class="fragment fade-up" src="images/feign03.png">
+            </section>
+
+            <section>
+                <h2 class="x-title">服务消费者 Feign</h2>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Feign client服务消费者</h2>
+                <h2 class="x-title x-left x-fs">步骤一: 配置依赖</h2>
+                <pre><code>compile('org.springframework.cloud:spring-cloud-starter-feign')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Feign client服务消费者</h2>
+                <h2 class="x-title x-left x-fs">步骤二: 标注Application类</h2>
+                <pre><code>@EnableFeignClients
+@SpringBootApplication
+public class FeignClientApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(FeignClientApplication.class, args);
+    }
+}</code></pre>
+
+                <p class="x-fm">@EnableFeignClients 表示当前应用可以调用其他服务</p>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">Feign client服务消费者</h2>
+                <h2 class="x-title x-left x-fs">步骤三: 新建Feign Service</h2>
+                <pre><code>@FeignClient("servicename")
+public interface FeignService {
+
+    @GetMapping("/xxx")
+    public String xxx();
+}</code></pre>
+
+                <ul class="x-fm">
+                    <li>@FeignClient: 表示要调用的服务,值为服务名称</li>
+                    <li>当前类声明为接口</li>
+                    <li>声明的方法和被调用的服务接口方法一致</li>
+                    <li>通过@Autowired 声明并使用此服务</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="x-title">Feign 高可用性</h2>
+                <img src="images/feign05.png" class="fragment fade-up">
+            </section>
+
+        </section>
+
+        <section>
+
+            <section>
+                <h2>小结</h2>
+                <ul>
+                    <li>Feign实现了服务间的调用</li>
+                    <li>Feign实现了负载均衡</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>微服务概念形态</h2>
+                <img src="images/feign04.png">
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>黑马大饭店</h2>
+                <h2 class="fragment fade-up">第三季</h2>
+            </section>
+
+            <section>
+                <h2>场景</h2>
+                <img src="images/gateway01.png">
+            </section>
+
+            <section>
+                <h2>升级管理</h2>
+                <img src="images/gateway02.png">
+            </section>
+
+            <section>
+                <h2 class="x-title">网关 API Gateway</h2>
+                <img class="fragment fade-up" src="images/gateway03.png">
+                <img class="fragment fade-up" src="images/gateway05.png">
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">API网关</h2>
+                <h2 class="x-title x-left x-fs">步骤一: 配置依赖</h2>
+                <pre><code>compile('org.springframework.cloud:spring-cloud-starter-zuul')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">API网关</h2>
+                <h2 class="x-title x-left x-fs">步骤二: 标注Application类</h2>
+                <pre><code>@EnableZuulProxy
+@SpringBootApplication
+public class GatewayApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(GatewayApplication.class, args);
+    }
+}</code></pre>
+
+                <p class="x-fm">@EnableZuulProxy 表示当前应用是网关路由</p>
+            </section>
+
+            <section>
+                <h2 class="x-title x-left x-fm">API网关</h2>
+                <h2 class="x-title x-left x-fs">步骤三: 配置application.yml</h2>
+                <pre><code>eureka:
+    instance:
+        hostname: localhost
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+zuul:
+    routes:
+        #分发到a服务
+        a.path: /a/**
+        a.serviceId: a-service
+        a.retryable: true
+        #分发到b服务
+        b.path: /b/**
+        b.serviceId: b-service
+        b.retryable: true
+    host:
+        connect-timeout-millis: 30000
+        socket-timeout-millis: 30000</code></pre>
+
+                <ul class="x-fm">
+                    <li>path:分流哪些路径</li>
+                    <li>serviceId:服务的名称</li>
+                    <li>retryable:是否重试</li>
+                    <li>connect-timeout-millis:连接超时</li>
+                    <li>socket-timeout-millis:响应超时</li>
+                </ul>
+            </section>
+
+
+        </section>
+
+        <section>
+
+            <section>
+                <h2>小结</h2>
+                <ul>
+                    <li>API Gateway 统一了端口</li>
+                    <li>API Gateway 集中式管理了接口</li>
+                    <li>API Gateway 请求的唯一出入口</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>微服务概念形态</h2>
+                <img src="images/gateway04.png">
+            </section>
+
+        </section>
+
+
+        <section>
+
+            <section>
+                <h2>彩票项目微服务化</h2>
+            </section>
+
+            <section>
+                <h2>目前的架构</h2>
+                
+                <img src="images/lottery01.png">
+            </section>
+
+            <section>
+                <h2>目前架构的特点</h2>
+                <ul>
+                    <li>单应用架构，具备单应用架构的优缺点</li>
+                    <li>前后端未分离</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>微服务化后的架构</h2>
+
+                <img src="images/lottery02.png">
+            </section>
+
+            <section>
+                <h2>微服务化后的特点</h2>
+                <ul>
+                    <li>微服务</li>
+                    <li>前后端分离</li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+
+            <section>
+                <h2>交互的介绍</h2>
+                <p>见实际运行效果</p>
+            </section>
+
+            <section>
+                <h2>前端代码部署</h2>
+                <ul>
+                    <li>NodeJs环境搭建</li>
+                    <li>项目导入</li>
+                    <li>命令行到项目目录下，运行
+                        <pre><code>npm run serve</code></pre>
+                    </li>
+                </ul>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2>服务的拆分</h2>
+                <img src="images/lottery03.png">
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">彩票信息服务</h2>
+            </section>
+            <section>
+                <h2>数据库选择</h2>
+                <p>开发阶段: H2数据库</p>
+            </section>
+
+            <section>
+                <h2>依赖添加</h2>
+                <pre><code>compile('org.projectlombok:lombok:1.16.20')
+compile('org.springframework.boot:spring-boot-starter-data-jpa')
+compile('com.h2database:h2:1.4.196')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title">application.yml配置</h2>
+                <pre><code>spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /itheima-h2-console
+  datasource:
+    url: jdbc:h2:file:./info;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 123
+#    data: classpath:import.sql
+  jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+        ddl-auto: update</code></pre>
+            </section>
+
+            <section>
+                <h2>交互接口</h2>
+                <p>见接口文档</p>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">用户服务</h2>
+            </section>
+
+            <section>
+                <h2>数据库选择</h2>
+                <p>开发阶段: H2数据库</p>
+            </section>
+
+            <section>
+                <h2>依赖添加</h2>
+                <pre><code>compile('org.projectlombok:lombok:1.16.20')
+compile('org.springframework.boot:spring-boot-starter-data-jpa')
+compile('com.h2database:h2:1.4.196')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title">application.yml配置</h2>
+                <pre><code>spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /itheima-h2-console
+  datasource:
+    url: jdbc:h2:file:./user;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 123
+#    data: classpath:import.sql
+  jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+        ddl-auto: update</code></pre>
+            </section>
+
+            <section>
+                <h2>交互接口</h2>
+                <p>见接口文档</p>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">订单服务</h2>
+            </section>
+
+            <section>
+                <h2>数据库选择</h2>
+                <p>开发阶段: H2数据库</p>
+            </section>
+
+            <section>
+                <h2>依赖添加</h2>
+                <pre><code>compile('org.projectlombok:lombok:1.16.20')
+compile('org.springframework.boot:spring-boot-starter-data-jpa')
+compile('com.h2database:h2:1.4.196')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title">application.yml配置</h2>
+                <pre><code>spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /itheima-h2-console
+  datasource:
+    url: jdbc:h2:file:./order;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 123
+#    data: classpath:import.sql
+  jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+      hibernate:
+        ddl-auto: update</code></pre>
+            </section>
+
+            <section>
+                <h2>交互接口</h2>
+                <p>见接口文档</p>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">静态资源服务</h2>
+            </section>
+
+            <section>
+                <h2>依赖添加</h2>
+                <pre><code>compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+compile('net.sourceforge.nekohtml:nekohtml:1.9.22')</code></pre>
+            </section>
+
+            <section>
+                <h2 class="x-title">application.yml配置</h2>
+                <pre><code>spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    content-type: text/html
+    mode: LEGACYHTML5</code></pre>
+            </section>
+
+        </section>
+
+        <section>
+            <section>
+                <h2 class="x-title">必备的服务</h2>
+                <ul>
+                    <li>服务注册中心</li>
+                    <li>API 网关</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <h2>整合部署</h2>
+        </section>
+
+        <section id="end">
+            <h2>End</h2>
+            <h2>Thank You</h2>
+        </section>
+
+    </div>
+
+    <div style="position: absolute;top: auto; bottom: 36px; left: 12px; right: auto; color: white; z-index: 1">
+        <label style="font: 0.4em 'Fira Code'">黑马程序员-肖琦</label>
+    </div>
+
+    <div id="mission" style="display:none;position: absolute;top: 12px;left: 12px; z-index: 1;">
+        <label
+                style="color: #fff;font: 0.6em 'Fira Code';">
+            改变中国IT教育，我们在行动...
+        </label>
+    </div>
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        width: 960,
+        height: 700,
+        dependencies: [
+            {src: 'lib/plugin/markdown/marked.js'},
+            {src: 'lib/plugin/markdown/markdown.js'},
+            {src: 'lib/plugin/notes/notes.js', async: true},
+            {
+                src: 'lib/plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {
+                src: 'lib/plugin/tagcloud/tagcloud.min.js', async: true, callback: function () {
+                    tagcloud({
+                        //参数名: 默认值
+                        fontsize: 24,       //基本字体大小
+                        radius: 160,         //滚动半径
+                        mspeed: "normal",   //滚动最大速度
+                        ispeed: "normal",   //滚动初速度
+                        direction: 135,     //初始滚动方向
+                        keep: false          //鼠标移出组件后是否继续随鼠标滚动
+                    });
+                }
+            }
+        ],
+        controlsTutorial: true
+    });
+    Reveal.addEventListener('slidechanged', function (event) {
+        if (event.currentSlide.id == "end") {
+            document.getElementById("mission").style.setProperty("display", "block");
+        } else {
+            document.getElementById("mission").style.setProperty("display", "none")
+        }
+    });
+
+
+</script>
+</body>
+</html>

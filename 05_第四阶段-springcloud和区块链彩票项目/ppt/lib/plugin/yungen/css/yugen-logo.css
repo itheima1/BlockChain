@@ -1,0 +1,74 @@
+/**
+ * The main style sheet for the animated Yugen logo
+ * project.
+ * 
+ * @author Hakim El Hattab
+ */
+
+html, body {
+	padding: 0;
+	margin: 0;
+	
+	background: #fff;
+	color: #222;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	
+	text-align: center;
+}
+
+#yugen-logo {
+	display: inline-block;
+}
+
+
+/**
+ * Debug elements
+ */
+header {
+	display: block;
+	background: #eee;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+
+#debug-panel textarea {
+	display: inline-block;
+	clear: both;
+}
+
+#debug-panel button {
+	margin: 5px 2px;
+	padding: 12px 22px;
+	
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 12px;
+	
+	border-radius: 4px;
+	
+	color: #fafafa;
+	background: #6ca3d5;
+	border: none;
+	border-right: #fff 1px solid;
+	border-top: #fff 1px solid;
+	
+	cursor: pointer;
+	
+	transition: background-color,color .06s,.06s linear;
+	-o-transition: background-color,color .06s,.06s linear;
+	-moz-transition: background-color,color .06s,.06s linear;
+	-webkit-transition: background-color,color .06s,.06s linear;
+}
+
+#debug-panel button:hover {
+	color: #ffffff;
+	background: #517db6;
+}
+
+
+
+
+
+

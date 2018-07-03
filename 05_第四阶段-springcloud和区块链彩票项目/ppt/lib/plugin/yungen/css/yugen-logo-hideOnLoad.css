@@ -1,0 +1,10 @@
+/**
+ * These styles are loaded if JavaScript is available to
+ * hide elements that will be showing using script.
+ * 
+ * @author Hakim El Hattab
+ */
+
+#yugen-logo img {
+	display: none;
+}
