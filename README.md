@@ -1,6 +1,5 @@
 ## 黑马程序员 120天全栈区块链开发
 
-### 郑重声明： 本套课程采用CC-BY-SA-4.0协议开源， 任何人可以免费传播使用，只需要保留出处和版权。不得私自贩卖盈利。 如果大家发现其他培训机构盗用黑马程序员区块链的课程，在淘宝售卖黑马程序员区块链的课程，请发送证据到email: 2698900570@qq.com举报， 如果可以提供能用于法律诉讼的必备资料， 奖励以太币一枚。
 
 
 ### 写在前面
@@ -39,6 +38,12 @@
 
 ### 课程答疑qq群
 【答疑群】：https://jq.qq.com/?_wv=1027&k=5D3no1J
+
+###课程详细信息：
+
+[课程详细信息链接](https://www.boxuegu.com/web/subject/002/index.html?a=YQVpLg&b=x7w7n9&utm_source=cebianlan)
+
+
 
 ### 学习前提
 本套课程建议大家需要具备java基础, 
@@ -205,7 +210,6 @@ java基础全套视频:
 
 
 - **第九周:  区块链产品经理之道**
-
     - 课程设计背景:
         区块链是新型的技术,懂产品的开发人员更受欢迎.
 
@@ -300,34 +304,88 @@ java基础全套视频:
       快速教大家使用go语言重写nodejs的智能合约. 
 
 
+### 郑重声明： 本套课程采用CC-BY-SA-4.0协议开源， 任何人可以免费传播使用，只需要保留出处和版权。不得私自贩卖盈利。 如果大家发现其他培训机构盗用黑马程序员区块链的课程，在淘宝售卖黑马程序员区块链的课程，请发送证据到email: 2698900570@qq.com举报， 如果可以提供能用于法律诉讼的必备资料， 奖励以太币一枚。
 
 
-## 其他相关资料
 
-| 第一阶段：区块链主流语言:Go语言开发实战             | 20小时入门学会go语言                                         | https://pan.baidu.com/s/1jJPsThk                |
-| --------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------- |
-| **（新）**go语言与区块链(线下基础班)精品课程        | https://pan.baidu.com/s/1s93rm-6pnK-Qa1Rnns6HhA              |                                                 |
-| Go语言Gui游戏开发——黑白棋                           | https://pan.baidu.com/s/1_Gmi2nKPaWw4LShOs60Hng              |                                                 |
-| 第二阶段：区块链后端技术体系:Go语言高并发服务器开发 | Linux从入门到精通                                            | https://pan.baidu.com/s/1ioqrYi1c4F_yRM9mWnX7sQ |
-| Go高并发服务器开发实战                              | 待更新                                                       |                                                 |
-| Go并发的爬虫系统开发实战                            | 待更新                                                       |                                                 |
-| 第三阶段：去中心化前端开发与web服务器开发           | **（新）**区块链精品教程系列【系统篇】                       | https://pan.baidu.com/s/1c9Q1IinabkKj6AxAYZz13Q |
-| 关系型数据库-mysql                                  | https://pan.baidu.com/s/1kVVL53L                             |                                                 |
-| redis                                               | <https://pan.baidu.com/s/1MGO0qtYj0F32OjjsQcvT8w>            |                                                 |
-| 分布式文件系统fastDFS                               | 待更新                                                       |                                                 |
-| 前端与移动开发基础视频                              | https://pan.baidu.com/s/1jIcd84e                             |                                                 |
-| 玩转Github开发                                      | https://pan.baidu.com/s/1c1kV5W                              |                                                 |
-| beego框架深入浅出视频                               | https://pan.baidu.com/s/17UJcE-FD9cdWGNTNZjRs0Q              |                                                 |
-| 大项目一RESTful接口设计电商项目                     | 待更新                                                       |                                                 |
-| 第四阶段：区块链密码学安全理论与开发                | ![img](http://bbs.itheima.com/data/attachment/forum/201808/07/180155q6jbkb86pvz86b2n.gif) **（新）**区块链编程精品教程系列【密码学篇】 | https://pan.baidu.com/s/11orEFkPmf2pJk-z6xTB9fg |
-| 第五阶段：区块链与智能合约开发                      | 区块链精品教程系列-智能合约篇                                | https://pan.baidu.com/s/16PGS7LBzC-INX8Vg6XakKQ |
-| Node.js                                             | https://pan.baidu.com/s/1hZ2FBzvES_Toz6SgW0t-AA              |                                                 |
-| 大项目二：以太坊DAPP开发实战                        | 待更新                                                       |                                                 |
-| 第六阶段：分布式微服务开发                          | docker神秘面纱                                               | https://pan.baidu.com/s/1boRwElh                |
-| 分布式微服务开发                                    | 待更新                                                       |                                                 |
-| 第七阶段：区块链系统框架开发                        | ![img](http://bbs.itheima.com/data/attachment/forum/201808/14/113432pdiznxdvunbetnjj.gif) 区块链框架Hyperledger项目案例(华为平台)首发 | https://pan.baidu.com/s/1tfqIziOjMcjvde8Y-VVR4A |
-| EOS开发实战                                         | 待更新                                                       |                                                 |
-| 大项目三：.微服务分布式租房去中心化系统             | 待更新                                                       |                                                 |
-| 第八阶段：Golang面试强化与脚本编程                  | Go与数据结构                                                 | 待更新                                          |
-| Go与常用算法                                        | 待更新                                                       |                                                 |
-| UnixShell脚本高级编程                               | 待更新                                                       |                                                 |
+
+
+#其他相关资料
+
+
+Go语言开发实战
+
+20小时入门学会go语言
+
+https://pan.baidu.com/s/1jJPsThk
+
+（新）
+go语言与区块链(线下基础班)精品课程
+
+https://pan.baidu.com/s/1s93rm-6pnK-Qa1Rnns6HhA
+
+
+Go语言Gui游戏开发——黑白棋
+
+https://pan.baidu.com/s/1_Gmi2nKPaWw4LShOs60Hng
+
+高并发服务器开发
+
+Linux从入门到精通
+
+https://pan.baidu.com/s/1ioqrYi1c4F_yRM9mWnX7sQ
+
+
+
+区块链精品教程系列【系统篇】
+
+https://pan.baidu.com/s/1c9Q1IinabkKj6AxAYZz13Q
+
+关系型数据库-mysql
+
+https://pan.baidu.com/s/1kVVL53L
+
+redis
+
+ https://pan.baidu.com/s/1MGO0qtYj0F32OjjsQcvT8w
+
+
+前端与移动开发基础视频
+
+https://pan.baidu.com/s/1jIcd84e
+
+
+玩转Github开发
+
+https://pan.baidu.com/s/1c1kV5W
+
+
+beego框架深入浅出视频
+
+https://pan.baidu.com/s/17UJcE-FD9cdWGNTNZjRs0Q
+
+区块链编程精品教程系列【密码学篇】
+
+https://pan.baidu.com/s/11orEFkPmf2pJk-z6xTB9fg
+
+
+区块链与智能合约开发
+
+区块链精品教程系列-智能合约篇
+
+https://pan.baidu.com/s/16PGS7LBzC-INX8Vg6XakKQ
+
+
+Node.js
+
+ https://pan.baidu.com/s/1hZ2FBzvES_Toz6SgW0t-AA
+
+docker神秘面纱
+
+https://pan.baidu.com/s/1boRwElh
+
+
+区块链框架Hyperledger项目案例(华为平台)首发
+
+https://pan.baidu.com/s/1tfqIziOjMcjvde8Y-VVR4A
+
