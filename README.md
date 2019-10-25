@@ -2,6 +2,8 @@
 
 
 
+
+
 ### 写在前面
 据说2018年谈区块链的10个人中有9个都是骗子, 
 一些机构自己都没搞懂区块链是什么, 
@@ -72,6 +74,7 @@ java基础全套视频:
 
     - 课程学习说明:
       每一个程序员都应该好好听一下这一段课程
+https://pan.baidu.com/s/1GKXO3-UPv0nJzxhXxnrE7g
 
 
 
@@ -92,7 +95,7 @@ java基础全套视频:
 
     - 课程学习说明:
       熟悉前端技术栈的程序员可以选择性的学习
-
+https://pan.baidu.com/s/1Zx9NM3Fs_bW69S6O8Qrcdw
 
  - **第三周:Java分布式/springboot/springcloud/微服务/数据库技术**
     - 课程设计背景:
@@ -112,7 +115,7 @@ java基础全套视频:
 
     - 课程学习说明:
       熟悉spring全家桶的java程序员可以选择性的学习
-
+https://pan.baidu.com/s/1cI4PIS7Lw8ZzWLif45-Nsg
 
 
  - **第四周: 微服务+支付 springboot版互联网彩票项目实战**
@@ -133,7 +136,7 @@ java基础全套视频:
     - 课程学习说明:
       从项目原型设计到实战, 全干货实战课程, 无论几年工作经验的程序员都有必要学习
 
-
+https://pan.baidu.com/s/1HVAgMQAAYjI5km_ieR1z_w
 
  - **第五周: 区块链前端和中间件开发 Nodejs+Vue+React**
     - 课程设计背景:
@@ -171,7 +174,7 @@ java基础全套视频:
     - 课程学习说明:
       实战项目,每个对ipfs有兴趣的程序员都有必要学习
 
-
+https://pan.baidu.com/s/1kJHBcSoB9zRf6pXd94-c7A
 
 - **第七周--第八周:  以太坊和智能合约项目实战**
     - 课程设计背景:
@@ -202,7 +205,7 @@ java基础全套视频:
     - 课程学习说明:
       课程以实战为主,会讲解去**中心化彩票项目和众筹项目开发**, 强烈建议认真学习.
 
-
+https://pan.baidu.com/s/18uvdEMrnOU-kEPf1rQ7Ulw
 
 
 
@@ -230,7 +233,7 @@ java基础全套视频:
     - 课程学习说明:
       伪区块链技术和真区块链技术需要产品经理好好把握, 区块链解决的痛点是什么,值得大家思考
 
-
+https://pan.baidu.com/s/1dDw_eEvkL_MKnYOiiivwHw
 
 - **第十周:  hyperledger 企业级开发项目实战 -- 江苏省农牧厅渔业管理系统**
 
