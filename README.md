@@ -152,7 +152,7 @@ https://pan.baidu.com/s/1HVAgMQAAYjI5km_ieR1z_w
 
     - 课程学习说明:
       经验丰富,熟练掌握vue,react和nodejs的前端程序员可以跳过这段课程
-
+https://pan.baidu.com/s/15wM4UFWX9mlGMR-MHjE62w
 
 
 - **第六周: 区块链项目实战 -- IPFS音乐播放器项目**
@@ -256,7 +256,7 @@ https://pan.baidu.com/s/1dDw_eEvkL_MKnYOiiivwHw
     - 课程学习说明:
       课程通过实战案例,分析hyperledger的应用场景,带你分析业务,最后实现项目
 
-
+https://pan.baidu.com/s/1mFMPIXTSR1-wuRaLm7y6hw
 
 - **第十一周:  区块链移动开发+智能物联网**
 
