@@ -9,13 +9,13 @@ nodejs的版本必须大于8.0.0
 命令行指定
 
 ```
-npm --registry https://registry.npm.taobao.org info underscore 
+npm --registry https://registry.npmmirror.com info underscore 
 ```
 
 编辑 `~/.npmrc` 加入下面内容
 
 ```
-registry = https://registry.npm.taobao.org
+registry = https://registry.npmmirror.com
 ```
 
 
